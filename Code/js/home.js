@@ -179,7 +179,16 @@ function card8Data() {
 
 function card9Data() {
     document.querySelector("#title9").innerHTML =
-        "<i class='bi bi-card-text'></i> Notefy - Notes taking app";
+        "<i class='bi bi-card-text'> </i>Notefy - Notes taking app";
     document.querySelector("#content9").textContent =
-        "Let's you create small notes and save them in your browser. You can also Edit and Delete them as you want.";
+        "A simple notes taking app to keep your notes organized. You can add, edit and delete your notes.";
 }
+
+
+// Preloader Code
+document.addEventListener('load',preLoader())
+
+function preLoader(){
+    $("#preloader").delay(2000).fadeOut(1000);
+    $('body').removeClass('loading');
+  }

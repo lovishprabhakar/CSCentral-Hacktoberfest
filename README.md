@@ -45,7 +45,7 @@ Team working with a lot of folks which is very good for the growth 📈 of the p
 - Just make sure that you push only the files that you have worked upon.
 - ## Demo
 
-Check out the website: [https://akhil-aggarwal.github.io/cookie/](https://akhil-aggarwal.github.io/cookie/)
+Check out the website: [https://akhil-aggarwal.github.io/cookie/](https://lovishprabhakar.github.io/C-Simplify/Code/index.html)
 
 
 ## Tech stack

@@ -22,9 +22,15 @@ Yes!!, you're here!✨. This is the first step in making your contribution to th
 Finally, we can't wait to see your outstanding issues and pull requests. Welcome 😇❤
 
 ## Features
-- It prompts the user to enter a few basic details
-- It makes cookies out of the details fetched from the user
-- Cookies are used to set various text and options in the website
+It is a Website that provides combined characteristics of:
+- Currency Converter
+- Post Office Locator
+- News Web App
+- Weather Forecast
+- Programming Competition Finder
+- Translator
+- QR Code Generator
+- Dictionary
 
 <br>
 
@@ -65,7 +71,7 @@ At the point you are ready to take on the world of open source contribution!!.
 # Steps to folow while making a contribution:
 
 1. Create an Issue, wait for it to be accpeted.
-2. After the issue is accepted and `Hacktoberfest2022` label is added to it, you can start working on your local repository.
+2. After the issue is accepted and `hacktoberfest-accepted` label is added to it, you can start working on your local repository.
 3. Push your local changes to remote and create a Pull Request. That's all! Your changes will then be reviewed by the maintainer.
 
 For step by step explanation of how to push your local changes to remote, see our [CONTRIBUTING.md](https://github.com/lovishprabhakar/C-Simplify/blob/main/CONTRIBUTING.md) file.

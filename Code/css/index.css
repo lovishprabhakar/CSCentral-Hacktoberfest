@@ -1,0 +1,63 @@
+html,
+body {
+    /* background: https://source.unsplash.com/random/900x700/?fruit; */
+    /* background-color: #0a1f44; */
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    /* height: 100%; */
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+div#result-data {
+    border-radius: 50px;
+    background: #e2e1e1be;
+    padding-right: 28px;
+}
+
+div#result-data:hover {
+    background: #b9b9b9f1;
+    border-radius: 50px;
+    transition: 2s ease;
+}
+
+h1.h3.mb-3.my-4.fw-normal.text-center {
+    background: #1a1a1c;
+    border-radius: 21px;
+    padding: 13px 8px;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #cfd8dc #90a4ae;
+}
+
+body::-webkit-scrollbar-track {
+    background: #cfd8dc;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #90a4ae;
+    border-radius: 6px;
+    border: 3px solid #cfd8dc;
+}

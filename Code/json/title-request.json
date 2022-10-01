@@ -1,0 +1,10 @@
+[
+
+    {
+        "id": 1,
+        "title": "Currency Checker",
+        "content": "currency exchange rate calculator helps you conversion of all major world currencies by latest foreign exchange rates.",
+        "currency_list_url": "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies.json",
+        "base_target_url": "https://github.com/fawazahmed0/currency-api/blob/1/latest/currencies/bch/1inch.json"
+    }
+]

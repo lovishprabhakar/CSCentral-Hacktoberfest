@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #23457c;
+    --yellow: #fabf44;
+    --secondary-blue-color: #136bc0;
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-blue {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-blue:hover {
+    color: #fff;
+}
+
+
+/* .form-control:focus {
+    color: #fff;
+    background-color: var(--primary-color);
+} */
+
+.bg-secondary-blue {
+    background-color: var(--secondary-blue-color);
+}
+
+.text-blue {
+    color: var(--primary-color);
+}
+
+#loading {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    /* border-right: 0.15em solid orange; */
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em;
+    /* Adjust as needed */
+    animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}

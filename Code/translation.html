@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSimplify - CSimplify Tanslation</title>
+    <!-- CSS only -->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+<body>
+    <!-- Header  -->
+    <header>
+        <div class="bg-dark collapse " id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted" id="header_info">
+                        </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled" id="header_list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-primary shadow-sm">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand d-flex align-items-center">
+                    <i class="bi bi-balloon-heart-fill fs-1"></i>
+                    <strong><h1>CSimplify</h1></strong>
+                </a>
+                <h3 class="text-light"><i class='bi bi-code-translate'></i> CST - CSimplify Tanslation</h3>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+
+        <div class="row my-3">
+            <div class="col-lg-6 col-sm-12 col-md-12">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-center flex-wrap">
+                        <input type="text" name="" id="" placeholder="English" readonly="true" class="my-1 w-50 form-control form-control-sm">
+                        <!-- <select id="language_from" class=" my-1 form-select form-select-sm w-50"></select> -->
+                        <textarea id="convert_from_text" cols="30" rows="10" class="form-control "></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-end ">
+                            <a role="button" class="btn btn-sm btn-primary mx-2" id="speak_from" title="Speak Loud"><i class="bi bi-megaphone"></i></a>
+                            <a role="button" class="btn btn-sm btn-primary" title="Copy" id="copy_from"><i class="bi bi-clipboard-check"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-12">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-center flex-wrap">
+                        <select id="language_to" class=" my-1 form-select form-select-sm w-50"></select>
+                        <textarea id="convert_to_text" cols="30" rows="10" class="form-control " disabled></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-end">
+                            <a role="button" class="btn btn-sm btn-info text-dark mx-2" id="speak_to" title="Speak Loud"><i class="bi bi-megaphone"></i></a>
+                            <a role="button" class="btn btn-sm btn-info text-dark" title="Copy" id="copy_to"><i class="bi bi-clipboard-check"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script src="./js/translation.js "></script>
+    <script src="./js/common.js "></script>
+
+</body>
+
+</html>

@@ -91,3 +91,11 @@ function displayResults() {
             <div class="col-lg-2 col-sm-12 col-md-12"></div>`;
         });
 }
+
+// Preloader Code
+document.addEventListener('load',preLoader())
+
+function preLoader(){
+    $("#preloader").delay(2000).fadeOut(1000);
+    $('body').removeClass('loading');
+  }

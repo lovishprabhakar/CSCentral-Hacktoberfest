@@ -170,3 +170,12 @@ function card8Data() {
     document.querySelector("#content8").textContent =
         "This gathers information about a word and instructs when and where it should be used, as well as how to pronounce it. Expand your vocabulary.";
 }
+
+
+// Preloader Code
+document.addEventListener('load',preLoader())
+
+function preLoader(){
+    $("#preloader").delay(2000).fadeOut(1000);
+    $('body').removeClass('loading');
+  }

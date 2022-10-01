@@ -42,7 +42,36 @@
           </div>
       </div>
   </header>
+  <div class="container">
+      <form class="d-flex search-container mx-5 my-3 " role="search">
+         <input class="form-control me-2 " id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+      </form>
+      <div class="card mx-5" style="color: #000000;">
+         <div class="card-body">
+         <h5 class="card-title">Add a Note</h5>
+         <div class="mb-3">
+            <textarea class="form-control" id="addTxt" rows="3"></textarea>
+          </div>
+         <button id="addBtn" class="btn btn-primary">Add Note</button>
+         </div>
+      </div>
+      <h2 class="m-3 mx-5">Your Notes</h2>
+      <hr class="m-2 mx-4">
+      <div class="row container-fluid mx-2 my-2" id="notes">
+         <!-- <div class="noteCard card mx-2 my-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button class="btn btn-primary">Delete</a>
+            </div>
+          </div> -->
+      </div>
+      <br>
+   </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-<script src="./js/notefy.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- <script src="./js/index.js"></script> -->
+    <script src="./js/notefy.js"></script>
+    <script src="./js/common.js"></script>
 </html>

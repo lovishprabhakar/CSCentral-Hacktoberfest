@@ -105,7 +105,7 @@ function render_card_images() {
     );
     card_img9.setAttribute(
         "src",
-        "https://source.unsplash.com/random/925X617/?dictionary"
+        "https://source.unsplash.com/random/925X617/?note"
     );
 }
 
@@ -181,7 +181,7 @@ function card9Data() {
     document.querySelector("#title9").innerHTML =
         "<i class='bi bi-card-text'> </i>Notefy - Notes taking app";
     document.querySelector("#content9").textContent =
-        "A simple notes taking app to keep your notes organized. You can add, edit and delete your notes.";
+        "A simple notes taking app to keep your notes organized. You can add, and delete your notes.";
 }
 
 

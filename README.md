@@ -22,16 +22,22 @@ Yes!!, you're here!✨. This is the first step in making your contribution to th
 Finally, we can't wait to see your outstanding issues and pull requests. Welcome 😇❤
 
 ## Features
-- It prompts the user to enter a few basic details
-- It makes cookies out of the details fetched from the user
-- Cookies are used to set various text and options in the website
+It is a Website that provides combined characteristics of:
+- Currency Converter
+- Post Office Locator
+- News Web App
+- Weather Forecast
+- Programming Competition Finder
+- Translator
+- QR Code Generator
+- Dictionary
 
 <br>
 
 
 ![Preview](https://user-images.githubusercontent.com/89595539/193409420-94f07fb4-305e-4ee5-873e-1388fd8b0173.png)
 
-Here! we welcome everyone to contriubute to our project. You can contribute in several ways not just in code (E.g. Technical writing , collaborate in developing the website).
+Here! we welcome everyone to contribute to our project. You can contribute in several ways not just in code (E.g. Technical writing , collaborate in developing the website).
 Team working with a lot of folks which is very good for the growth 📈 of the project but most of times can lead to conflicting interests and point of views 👈👉. So , Below are set of rules 📖 that guide you for participating in this project.
 
 - Openess 👐. Collaboration is only possible if everyone is open to share ideas.
@@ -60,12 +66,12 @@ Check out the website: https://lovishprabhakar.github.io/C-Simplify/Code/index.h
 # Your First Contribution
 Is this your first time contributing to an open source project? If yes, Welcome!!✨🎉💃🏾 Here is a [great tutorial](https://app.egghead.io/playlists/how-to-contribute-to-an-open-source-project-on-github) on how to contribute to an open source project.
 
-At the point you are ready to take on the world of open source contribution!!.
+At this point you are ready to take on the world of open source contribution!!.
 
 # Steps to folow while making a contribution:
 
 1. Create an Issue, wait for it to be accpeted.
-2. After the issue is accepted and `Hacktoberfest2022` label is added to it, you can start working on your local repository.
+2. After the issue is accepted and `hacktoberfest-accepted` label is added to it, you can start working on your local repository.
 3. Push your local changes to remote and create a Pull Request. That's all! Your changes will then be reviewed by the maintainer.
 
 For step by step explanation of how to push your local changes to remote, see our [CONTRIBUTING.md](https://github.com/lovishprabhakar/C-Simplify/blob/main/CONTRIBUTING.md) file.

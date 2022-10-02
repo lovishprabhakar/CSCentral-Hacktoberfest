@@ -19,7 +19,7 @@ jobs:
         uses: JasonEtco/slash-assign-action@v0.0.3
         with:
 #           required_label: Up-For-Grab
-          assigned_label: Assigned, hacktoberfest-2022, hacktoberfest-accepted
+          assigned_label: hacktoberfest-accepted
           days_until_warning: 2
           days_until_unassign: 1
           stale_assignment_label: Open

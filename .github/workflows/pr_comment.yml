@@ -1,0 +1,22 @@
+name: Pull Request Messenger
+on:
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v3
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            # Create comment body as Markdown
+
+            var msg = `Hi! 👋 Thanks for participating! I will review as soon as possible, usually within a few hours.
+
+            **Watch for notifications** as I may request some small changes to make sure this meets the guidelines.`
+
+            
+              
+          

@@ -57,6 +57,22 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
+    background-color: #90a4ae;
+    border-radius: 6px;
+    border: 3px solid #cfd8dc;
+}
+
+#preloader{
+    background: #fdcfff url('../assets/preloader.gif') no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+}
+#home-cookie
+{
+    width: 60%;
   background-color: #90a4ae;
   border-radius: 6px;
   border: 3px solid #cfd8dc;

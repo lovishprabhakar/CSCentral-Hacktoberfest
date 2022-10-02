@@ -114,11 +114,13 @@ callingAPI("hacker_earth");
 callingAPI("leet_code");
 
 function imageurl(platform) {
-    // if (platform == "codeforces") {
-    //     return "./assets/contest3bg.avif";
-    // } else if (platform == "hacker_rank") {
-    //     return "./assets/contest3bg.avif";
-    // } else if (platform == "hacker_earth") {
-    return "./assets/contest3bg.avif";
-    // }
+    if (platform == "codeforces") {
+        return "./assets/contest3bg.avif";
+    } else if (platform == "hacker_rank") {
+        return "./assets/contest2.jpg";
+    } else if (platform == "hacker_earth") {
+        return "./assets/contest1.jpg";
+    } else if (platform == "leet_code") {
+        return "./assets/contest4.jpg";
+    }
 }

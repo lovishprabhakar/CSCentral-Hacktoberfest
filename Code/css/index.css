@@ -51,20 +51,21 @@ body::-webkit-scrollbar {
   transform: scale(1.1);
 }
 
-body {
-  scrollbar-width: thin;
-  scrollbar-color: #cfd8dc #90a4ae;
-}
+
 
 body::-webkit-scrollbar-track {
-  background: #cfd8dc;
+  background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgb(0, 35, 211) 70%);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #90a4ae;
-    border-radius: 6px;
-    border: 3px solid #cfd8dc;
+  background: transparent;
+  box-shadow: 0px 0px 0px 100000vh rgb(45, 42, 42);
+    border-radius: 8px;
 }
+.box {
+  box-shadow: 0px 0px 4px ??? black;
+}
+
 
 #preloader{
     background: #fdcfff url('../assets/preloader.gif') no-repeat center center;

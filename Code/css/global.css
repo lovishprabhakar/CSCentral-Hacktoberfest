@@ -65,3 +65,13 @@
         flex-direction: column;
     }
 }
+
+#myFooter
+{
+    background-color: #E83283;
+    margin-top: 4%;
+    padding: 1%;
+    text-align: center;
+    clear: both;
+    
+}

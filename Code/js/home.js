@@ -13,6 +13,8 @@ var card_img6 = document.querySelector("#card-img6");
 var card_img7 = document.querySelector("#card-img7");
 var card_img8 = document.querySelector("#card-img8");
 var card_img9 = document.querySelector("#card-img9");
+var card_img10 = document.querySelector("#card-img10");
+
 
 var cardRow = document.querySelectorAll("#mainRow");
 var headingTags = document.getElementsByTagName("h5");
@@ -107,6 +109,10 @@ function render_card_images() {
         "src",
         "https://source.unsplash.com/random/925X617/?note"
     );
+    card_img10.setAttribute(
+        "src",
+        "https://source.unsplash.com/random/925X617/?encrypt"
+    );
 }
 
 function renderCards() {
@@ -119,6 +125,7 @@ function renderCards() {
     card7Data();
     card8Data();
     card9Data();
+    card10Data();
 }
 
 function card1Data() {
@@ -184,6 +191,12 @@ function card9Data() {
         "A simple notes taking app to keep your notes organized. You can add, and delete your notes.";
 }
 
+function card10Data() {
+    document.querySelector("#title10").innerHTML = 
+        "<i class='bi bi-shield-lock'></i> CSE - CSimplify Encryption";
+    document.querySelector("#content10").textContent =
+        "This tool will encrypt your message using Caesar Cipher. It is based on the principle of shifting each letter of the message by a fixed number of positions.";
+}
 
 // Preloader Code
 document.addEventListener('load',preLoader())

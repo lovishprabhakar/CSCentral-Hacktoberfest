@@ -46,6 +46,10 @@ h1.h3.mb-3.my-4.fw-normal.text-center {
 body::-webkit-scrollbar {
   width: 11px;
 }
+.card:hover {
+  background-color: rgb(132, 94, 144);
+  transform: scale(1.1);
+}
 
 body {
   scrollbar-width: thin;

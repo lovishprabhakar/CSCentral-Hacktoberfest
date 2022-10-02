@@ -18,3 +18,4 @@ jobs:
             body: |
               Hey Contributor! You can start working on the issue. Good luck!
               Please comment `/assign` to get this issue assigned to you.
+              Don't forget to star the repository!

@@ -24,3 +24,4 @@ Live URL: https://lovishprabhakar.github.io/CSimplify/Code/index.html
 
 ## Notion:
 With the effort of a single browse, this website essentially assists students in keeping them in tact with current events happening around the world  and assessing their skills
+Copyright 2022 - CSimplify.

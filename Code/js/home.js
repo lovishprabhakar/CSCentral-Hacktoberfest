@@ -12,6 +12,7 @@ var card_img5 = document.querySelector("#card-img5");
 var card_img6 = document.querySelector("#card-img6");
 var card_img7 = document.querySelector("#card-img7");
 var card_img8 = document.querySelector("#card-img8");
+var card_img9 = document.querySelector("#card-img9");
 var card_img10 = document.querySelector("#card-img10");
 
 
@@ -104,6 +105,10 @@ function render_card_images() {
         "src",
         "https://source.unsplash.com/random/925X617/?dictionary"
     );
+    card_img9.setAttribute(
+        "src",
+        "https://source.unsplash.com/random/925X617/?note"
+    );
     card_img10.setAttribute(
         "src",
         "https://source.unsplash.com/random/925X617/?encrypt"
@@ -119,6 +124,7 @@ function renderCards() {
     card6Data();
     card7Data();
     card8Data();
+    card9Data();
     card10Data();
 }
 
@@ -176,6 +182,13 @@ function card8Data() {
         "<i class='bi bi-journal-bookmark-fill'></i> CSD - CSimplify Dictionary";
     document.querySelector("#content8").textContent =
         "This gathers information about a word and instructs when and where it should be used, as well as how to pronounce it. Expand your vocabulary.";
+}
+
+function card9Data() {
+    document.querySelector("#title9").innerHTML =
+        "<i class='bi bi-card-text'> </i>Notefy - Notes taking app";
+    document.querySelector("#content9").textContent =
+        "A simple notes taking app to keep your notes organized. You can add, and delete your notes.";
 }
 
 function card10Data() {

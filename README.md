@@ -31,6 +31,8 @@ It is a Website that provides combined characteristics of:
 - Translator
 - QR Code Generator
 - Dictionary
+- Note Taking Web App
+- Encryption-Decryption
 
 <br>
 

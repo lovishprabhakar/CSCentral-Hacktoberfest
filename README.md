@@ -37,7 +37,7 @@ It is a Website that provides combined characteristics of:
 
 ![Preview](https://user-images.githubusercontent.com/89595539/193409420-94f07fb4-305e-4ee5-873e-1388fd8b0173.png)
 
-Here! we welcome everyone to contriubute to our project. You can contribute in several ways not just in code (E.g. Technical writing , collaborate in developing the website).
+Here! we welcome everyone to contribute to our project. You can contribute in several ways not just in code (E.g. Technical writing , collaborate in developing the website).
 Team working with a lot of folks which is very good for the growth 📈 of the project but most of times can lead to conflicting interests and point of views 👈👉. So , Below are set of rules 📖 that guide you for participating in this project.
 
 - Openess 👐. Collaboration is only possible if everyone is open to share ideas.
@@ -66,7 +66,7 @@ Check out the website: https://lovishprabhakar.github.io/C-Simplify/Code/index.h
 # Your First Contribution
 Is this your first time contributing to an open source project? If yes, Welcome!!✨🎉💃🏾 Here is a [great tutorial](https://app.egghead.io/playlists/how-to-contribute-to-an-open-source-project-on-github) on how to contribute to an open source project.
 
-At the point you are ready to take on the world of open source contribution!!.
+At this point you are ready to take on the world of open source contribution!!.
 
 # Steps to folow while making a contribution:
 

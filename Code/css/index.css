@@ -46,21 +46,26 @@ h1.h3.mb-3.my-4.fw-normal.text-center {
 body::-webkit-scrollbar {
   width: 11px;
 }
-
-body {
-  scrollbar-width: thin;
-  scrollbar-color: #cfd8dc #90a4ae;
+.card:hover {
+  background-color: rgb(132, 94, 144);
+  transform: scale(1.1);
 }
 
+
+
 body::-webkit-scrollbar-track {
-  background: #cfd8dc;
+  background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgb(0, 35, 211) 70%);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #90a4ae;
-    border-radius: 6px;
-    border: 3px solid #cfd8dc;
+  background: transparent;
+  box-shadow: 0px 0px 0px 100000vh rgb(45, 42, 42);
+    border-radius: 8px;
 }
+.box {
+  box-shadow: 0px 0px 4px ??? black;
+}
+
 
 #preloader{
     background: #fdcfff url('../assets/preloader.gif') no-repeat center center;

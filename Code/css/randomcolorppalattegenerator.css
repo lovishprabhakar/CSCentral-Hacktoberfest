@@ -1,0 +1,36 @@
+.button {
+    background: linear-gradient(to right, cyan, #00aaff);
+    color: #111;
+    padding: 15px 60px;
+    font-size: 20px;
+    margin: 20px auto;
+    max-width: 200px;
+    outline: none;
+    display: block;
+    border: 1px solid #111;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 100px cyan;
+}
+
+.container2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.box {
+    width: 20%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 5px solid #111;
+    font-size: larger;
+    cursor: pointer;
+}

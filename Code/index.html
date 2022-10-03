@@ -5,60 +5,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSimplify - Home</title>
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <!-- CSS only -->
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
-
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Code/assets/favicons/favicon101-32x32.png"
+    />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLo7gB9lFCW0lf0KR2genMUcM33ZZgvpcaw&usqp=CAU"
+      type="image/png"
+    />
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLo7gB9lFCW0lf0KR2genMUcM33ZZgvpcaw&usqp=CAU" type="image/png">
+    <!-- CSS only -->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" / />
+
+    <link rel="stylesheet" href="./css/global.css" / />
+    <link rel="stylesheet" href="./css/index.css" / />
+    <link
+     
+      rel="stylesheet"
+     
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    /
   </head>
 
-  <body>
+    <body>
     <!-- Header  -->
     <header>
-      <nav class="navbar navbar-dark bg-primary shadow-sm">
-        <div class="container d-flex">
-          <div>
-            <a
-              href="./index.html"
-              class="navbar-brand d-flex align-items-center"
-            >
-              <i class="bi bi-balloon-heart-fill fs-1"></i>
-              <strong><h1>CSimplify</h1></strong>
-            </a>
-          </div>
+      <div class="bg-dark collapse " id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted" id="header_info">
+                        </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled" id="header_list">
 
-
-          <div class="w-50">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="navbar navbar-dark bg-primary shadow-sm">
+        <div class="container">
+          <a href="./index.html" class="navbar-brand d-flex align-items-center">
+            <i class="bi bi-balloon-heart-fill fs-1"></i>
+            <strong><h1>CSimplify</h1></strong>
+          </a>
+          <nav class="navbar" id="topnav">
+            <ul class="nav">
+                <li><a href="./currency-change.html"> CER</a></li>
+                <li><a href="./postal-code.html"> PIN</a></li>
+                <li><a href="./news.html"> MRI</a></li>
+                <div class="dropdown">
+                <li><a href="./currency-change.html"> More  <i class="fa fa-caret-down"></i></a></li>
+                <div class="dropdown-content">
+                    <a href="./location.html"> SWF </a>
+                    <a href="./contest.html">PYP </a>
+                    <a href="./translation.html">CST</a>
+                    <a href="./qr-gen.html">QR </a>
+                    <a href="./dictionary.html">CSD </a>
+                    <a href="./notefy.html">Notefy </a>
+                    <a href="./encrypt-decrypt.html">CSE </a>
+                </div>
+            </ul>
+          </nav>
+          <div class="d-flex">
             <input
               type="search"
-              name="search"
+              name=""
               id="searchCard"
+              id="search-btn"
               class="form-control form-control-sm"
               placeholder="Search..."
               autocomplete="off"
             />
+            <div class="icons">
+              <i class="fas fa-search" id="search-btn"></i>
+              <form action="" class="search-bar-container">
+                <input
+                  type="search"
+                  id="search-bar"
+                  placeholder=" search here..."
+                  autocomplete="off"
+                />
+                <label for="search-bar" class="fas fa-search"></label>
+              </form>
+            </div>
+            
+            <!-- <a class="mx-2 my-2" style="cursor: pointer" id="search"><i class="bi bi-search-heart-fill fs-0 "></i></a> -->
           </div>
 
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-          <div>
-              <button type="button" class="btn btn-info">Register</button>
-              <button type="button" class="btn btn-success">Sign In</button>
+          <div class="icons">
+          <button onclick="darkmode()" class="fa fa-adjust" id="adjust-btn"></button>
+          </div>
+          </div>
+          <div id="menu-bar" class="fas fa-bars"></div>
+          <script>
+            function menuToggle() {
+              const toggleMenu = document.querySelector(".menu");
+              toggleMenu.classList.toggle("active");
+            }
+          </script>
+          <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here..." />
+            <label for="search-bar" class="fas fa-search"></label>
+          </form>
         </div>
-
-
-          <!-- <a class="mx-2 my-2" style="cursor: pointer" id="search"><i class="bi bi-search-heart-fill fs-0 "></i></a> -->
-        </div>
-
-    </nav>
+      </div>
+      </div>
     </header>
     <!-- Random Quotes  -->
-    <div class="container">
+    <div class="container" style="margin-top: 30px">
       <div class="alert alert-primary" role="alert">
         <figure class="text-center">
           <blockquote class="blockquote">
@@ -75,7 +155,25 @@
       <div class="row row-cols-1 row-cols-md-3 g-4" id="mainRow">
         <div class="col">
           <div class="card h-100">
-            <img class="card-img-top" alt="Loading image" id="card-img2" />
+            <a href="./currency-change.html" class="text-decoration-none">
+              <img class="card-img-top" alt="Loading image" id="card-img1" />
+            </a>
+            <div class="card-body">
+              <a href="./currency-change.html" class="text-decoration-none">
+                <h5
+                  class="card-title text-capitalize text-blue"
+                  id="title1"
+                ></h5>
+              </a>
+              <p class="card-text" id="content1"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="./postal-code.html" class="text-decoration-none">
+              <img class="card-img-top" alt="Loading image" id="card-img2" />
+            </a>
             <div class="card-body">
               <a href="./postal-code.html" class="text-decoration-none">
                 <h5
@@ -87,10 +185,27 @@
             </div>
           </div>
         </div>
-
         <div class="col">
           <div class="card h-100">
-            <img class="card-img-top" alt="Loading image" id="card-img4" />
+            <a href="./news.html" class="text-decoration-none">
+              <img class="card-img-top" alt="Loading image" id="card-img3" />
+            </a>
+            <div class="card-body">
+              <a href="./news.html" class="text-decoration-none">
+                <h5
+                  class="card-title text-capitalize text-blue"
+                  id="title3"
+                ></h5>
+              </a>
+              <p class="card-text" id="content3"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="./location.html" class="text-decoration-none">
+              <img class="card-img-top" alt="Loading image" id="card-img4" />
+            </a>
             <div class="card-body">
               <a href="./location.html" class="text-decoration-none">
                 <h5
@@ -104,7 +219,9 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <img class="card-img-top" alt="Loading image" id="card-img5" />
+            <a href="./contest.html" class="text-decoration-none">
+              <img class="card-img-top" alt="Loading image" id="card-img5" />
+            </a>
             <div class="card-body">
               <a href="./contest.html" class="text-decoration-none">
                 <h5
@@ -118,7 +235,9 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <img class="card-img-top" alt="Loading image" id="card-img6" />
+            <a href="./translation.html" class="text-decoration-none">
+              <img class="card-img-top" alt="Loading image" id="card-img6" />
+            </a>
             <div class="card-body">
               <a href="./translation.html" class="text-decoration-none">
                 <h5
@@ -132,7 +251,9 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <img class="card-img-top" alt="Loading image" id="card-img7" />
+            <a href="./qr-gen.html" class="text-decoration-none">
+              <img class="card-img-top" alt="Loading image" id="card-img7" />
+            </a>
             <div class="card-body">
               <a href="./qr-gen.html" class="text-decoration-none">
                 <h5
@@ -146,7 +267,9 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <img class="card-img-top" alt="Loading image" id="card-img8" />
+            <a href="./dictionary.html" class="text-decoration-none">
+              <img class="card-img-top" alt="Loading image" id="card-img8" />
+            </a>
             <div class="card-body">
               <a href="./dictionary.html" class="text-decoration-none">
                 <h5
@@ -158,29 +281,44 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <footer>
-      <div class="bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About</h4>
-              <p class="text-muted" id="header_info"></p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled" id="header_list"></ul>
+        <div class="col">
+          <div class="card h-100">
+            <img class="card-img-top" alt="Loading image" id="card-img9" />
+            <div class="card-body">
+              <a href="./notefy.html" class="text-decoration-none">
+                <h5
+                  class="card-title text-capitalize text-blue"
+                  id="title9"
+                ></h5>
+              </a>
+              <p class="card-text" id="content9"></p>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+        <div class="col">
+          <div class="card h-100">
+            <img class="card-img-top" alt="Loading image" id="card-img10" />
+            <div class="card-body">
+              <a href="./caesar.html" class="text-decoration-none">
+                <h5
+                  class="card-title text-capitalize text-blue"
+                  id="title10"
+                ></h5>
+              </a>
+              <p class="card-text" id="content10"></p>
+            </div>
+        </div>    
+    </div>
+    <div id="myFooter"></div>
     <!-- JavaScript Bundle with Popper -->
     <script
+     
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+     
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+     
       crossorigin="anonymous"
+    
     ></script>
     <!-- <script src="./js/index.js"></script> -->
     <script src="./js/home.js"></script>

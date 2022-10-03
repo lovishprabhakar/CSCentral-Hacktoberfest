@@ -13,3 +13,5 @@ function preLoader(){
     $("#preloader").delay(2000).fadeOut(1000);
     $('body').removeClass('loading');
   }
+
+  document.getElementById("myFooter").innerHTML = "<p id='credits'>Made with <i class='fa fa-heart'></i> by Contributors</p>";

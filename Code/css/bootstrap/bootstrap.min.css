@@ -245,18 +245,8 @@ header #button {
   display: none;
 }
 
-header .icons i {
-  font-size: 1.8rem;
-  color: rgb(249, 250, 250);
-  cursor: pointer;
-  margin-right: 4rem;
-  margin-left: 0.5rem;
-  margin-bottom: 0.2rem;
-}
 
-header .icons i:hover {
-  color: #f7a3c9;
-}
+
 
 header .d-flex #searchCard {
   margin-right: 1rem;
@@ -331,19 +321,7 @@ header .navbar h1:hover {
   }
 }
 
-header .icons #adjust-btn {
-  color: white;
-  background-color: var(--bs-pink);
-  font-size: 1.8rem;
-  cursor: pointer;
-  border-color: var(--bs-pink);
-  margin-left: -0.3rem;
-}
 
-header .icons #adjust-btn:hover {
-  color: rgb(6, 6, 6);
-  transform: scale(1.2);
-}
 
 .dark-mode {
   background-color: black;
@@ -2212,7 +2190,7 @@ progress {
   box-shadow: none;
 }
 .form-control::-webkit-date-and-time-value {
-  height: 1.5em;
+  height: 2.0em;
 }
 .form-control::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.7);

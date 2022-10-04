@@ -62,9 +62,7 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0px 0px 0px 100000vh rgb(45, 42, 42);
     border-radius: 8px;
 }
-.box {
-  box-shadow: 0px 0px 4px ??? black;
-}
+
 
 
 #preloader{
@@ -94,7 +92,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #searchCard:hover {
-  border: 2px solid white;
+  border: 3px solid white;
 }
 
 #hamburger {

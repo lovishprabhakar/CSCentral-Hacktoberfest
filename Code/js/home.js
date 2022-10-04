@@ -236,7 +236,7 @@ function card11Data() {
 }
 function card12Data() {
   document.querySelector("#title12").innerHTML =
-    "<i class='bi bi-card-text'></i> Random Joke Generator";
+    "<i class='bi bi-card-text'></i> RJG - Random Joke Generator";
   document.querySelector("#content12").textContent =
     "'Dad' Jokes are greater than 'Bad' Jokes. Use this tool to learn new jokes and share with your friends to have a great time";
 }

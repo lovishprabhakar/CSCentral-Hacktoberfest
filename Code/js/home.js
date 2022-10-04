@@ -14,6 +14,7 @@ var card_img7 = document.querySelector("#card-img7");
 var card_img8 = document.querySelector("#card-img8");
 var card_img9 = document.querySelector("#card-img9");
 var card_img10 = document.querySelector("#card-img10");
+var card_img11 = document.querySelector("#card-img11");
 
 var cardRow = document.querySelectorAll("#mainRow");
 var headingTags = document.getElementsByTagName("h5");
@@ -132,6 +133,10 @@ function render_card_images() {
     "src",
     "https://source.unsplash.com/random/925X617/?encrypt"
   );
+  card_img11.setAttribute(
+    "src",
+    "https://source.unsplash.com/random/925X617/?colors"
+  );
 }
 
 function renderCards() {
@@ -145,6 +150,7 @@ function renderCards() {
   card8Data();
   card9Data();
   card10Data();
+  card11Data();
 }
 
 function card1Data() {
@@ -215,6 +221,12 @@ function card10Data() {
     "<i class='bi bi-shield-lock'></i> CSE - CSimplify Encryption";
   document.querySelector("#content10").textContent =
     "This tool will encrypt your message using Caesar Cipher. It is based on the principle of shifting each letter of the message by a fixed number of positions.";
+}
+function card11Data() {
+  document.querySelector("#title11").innerHTML =
+    "<i class='bi bi-shield-lock'></i> CPG - Color Palette Generator";
+  document.querySelector("#content11").textContent =
+    "Not sure what coloring scheme to use somewhere? Use this tool to generate a random color palette.";
 }
 
 // Preloader Code

@@ -16,6 +16,8 @@ var card_img9 = document.querySelector("#card-img9");
 var card_img10 = document.querySelector("#card-img10");
 var card_img11 = document.querySelector("#card-img11");
 var card_img12 = document.querySelector("#card-img12");
+var card_img13 = document.querySelector("#card-img13");
+
 
 var cardRow = document.querySelectorAll("#mainRow");
 var headingTags = document.getElementsByTagName("h5");
@@ -142,6 +144,10 @@ function render_card_images() {
     "src",
     "https://source.unsplash.com/random/925X617/?jokes"
   );
+  card_img13.setAttribute(
+    "src",
+    "https://source.unsplash.com/random/925X617/?programming"
+  );
 }
 
 function renderCards() {
@@ -157,6 +163,7 @@ function renderCards() {
   card10Data();
   card11Data();
   card12Data();
+  card13Data();
 }
 
 function card1Data() {
@@ -239,6 +246,12 @@ function card12Data() {
     "<i class='bi bi-card-text'></i> RJG - Random Joke Generator";
   document.querySelector("#content12").textContent =
     "'Dad' Jokes are greater than 'Bad' Jokes. Use this tool to learn new jokes and share with your friends to have a great time";
+}
+function card13Data() {
+  document.querySelector("#title13").innerHTML =
+    "<i class='fa fa-cog'></i> CCR- Code Compile Run";
+  document.querySelector("#content13").textContent =
+    "Compile and Run your code! Supported languages are C, C++, Java, Python, PHP";
 }
 
 // Preloader Code

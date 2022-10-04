@@ -47,8 +47,8 @@ body::-webkit-scrollbar {
   width: 11px;
 }
 .card:hover {
-  /* background-color: rgb(132, 94, 144); */
-  transform: scale(1.018);
+  background-color: rgb(132, 94, 144);
+  transform: scale(1.07);
 }
 #code-card:hover {
   background-color: inherit;

@@ -15,6 +15,7 @@ var card_img8 = document.querySelector("#card-img8");
 var card_img9 = document.querySelector("#card-img9");
 var card_img10 = document.querySelector("#card-img10");
 var card_img11 = document.querySelector("#card-img11");
+var card_img12 = document.querySelector("#card-img12");
 
 var cardRow = document.querySelectorAll("#mainRow");
 var headingTags = document.getElementsByTagName("h5");
@@ -137,6 +138,10 @@ function render_card_images() {
     "src",
     "https://source.unsplash.com/random/925X617/?colors"
   );
+  card_img12.setAttribute(
+    "src",
+    "https://source.unsplash.com/random/925X617/?jokes"
+  );
 }
 
 function renderCards() {
@@ -151,6 +156,7 @@ function renderCards() {
   card9Data();
   card10Data();
   card11Data();
+  card12Data();
 }
 
 function card1Data() {
@@ -227,6 +233,12 @@ function card11Data() {
     "<i class='bi bi-shield-lock'></i> CPG - Color Palette Generator";
   document.querySelector("#content11").textContent =
     "Not sure what coloring scheme to use somewhere? Use this tool to generate a random color palette.";
+}
+function card12Data() {
+  document.querySelector("#title12").innerHTML =
+    "<i class='bi bi-card-text'></i> Random Joke Generator";
+  document.querySelector("#content12").textContent =
+    "'Dad' Jokes are greater than 'Bad' Jokes. Use this tool to learn new jokes and share with your friends to have a great time";
 }
 
 // Preloader Code

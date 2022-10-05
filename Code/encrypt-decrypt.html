@@ -51,19 +51,43 @@
         </div>
     </header>
     <div id="hero">
-        <h3 class="text-light" id="hero-text"><i class="bi bi-file-earmark-person-fill"></i> RS - Resume Scorer</h3>
+        <h3 class="text-light" id="hero-text"><i class="bi bi-file-earmark-person-fill"></i> EAD - Encrypt and Decrypt</h3>
     </div>
-    <div class="container text-center" id="loading">
-
-    </div>
-    <div class="container">
-
-    </div>
+    <form>
+        <div class="container my-3">
+            <div class="row">
+                <div class="col-lg-2 col-sm-12 col-md-12"></div>
+                <div class="col-lg-8 col-sm-12 col-md-12">
+                    <div class="input-group mb-3">
+                        <input type="text" id="enc_dec_input" class="form-control" placeholder="Enter the text">
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <div class="input-group mb-3"  style="width: 60%;">
+                            <label class="input-group-text">Encrypt or Decrypt</label>
+                            <select class="form-select w-25" id="search_en_dec_type">
+                                <option value="tobase64">To Base64</option>
+                                <option value="frombase64">From Base64</option>
+                                <option value="tomd5">To MD5</option>
+                               
+                            </select>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <input type="button" name="" id="submit" class="btn bg-primary" value="Submit" onclick="enc_dec()">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-12 col-md-12"></div>
+            </div>
+            <div style="display: flex; justify-content: center;" id="enc_dec_output"></div>
+        </div>
+    </form>
     <div id="myFooter"></div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
     <script src="./js/common.js "></script>
     <script src="./js/encrypt-decrypt.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script> -->
 

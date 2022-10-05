@@ -14,8 +14,8 @@ During the entire month of October 2022, all you have to do is contribute to any
 
 If you’ve never contributed to open source before, this is the perfect time to get started because Hacktoberfest provides a large list of available contribution opportunities.
 
-# Contribute to C-Simplify
-This is a website that makes life easy for students, especially CSE students by making some daily-life used web apps available at one place.
+# Contribute to CSimplify
+CSimplify is a website that makes life easy for students, especially CSE students by making some daily-life used web apps available at one place.
 
 Yes!!, you're here!✨. This is the first step in making your contribution to the C-Simplify project. <br> This documentation will serve as a guide for making your contibutions to this project. Follow the steps stated below carefully.
 
@@ -38,7 +38,8 @@ It is a Website that provides combined characteristics of:
 <br>
 
 
-![Preview](https://user-images.githubusercontent.com/89595539/193409420-94f07fb4-305e-4ee5-873e-1388fd8b0173.png)
+![Preview](https://user-images.githubusercontent.com/89595539/194030725-c66eaf6a-2dac-4494-86a5-773b89f66d1f.png)
+
 
 Here! we welcome everyone to contribute to our project. You can contribute in several ways not just in code (E.g. Technical writing , collaborate in developing the website).
 Team working with a lot of folks which is very good for the growth 📈 of the project but most of times can lead to conflicting interests and point of views 👈👉. So , Below are set of rules 📖 that guide you for participating in this project.

@@ -138,7 +138,7 @@
     <!-- Title Cards  -->
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-4" id="mainRow">
-        <div class="col">
+        <div class="col" id="card">
           <div class="card h-100">
             <a href="./compile-run.html"><img class="card-img-top" alt="Loading image" id="card-img13" /></a>
             <div class="card-body">
@@ -152,7 +152,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" id="card">
           <div class="card h-100">
             <a href="./currency-change.html" class="text-decoration-none">
               <img class="card-img-top" alt="Loading image" id="card-img1" />
@@ -168,7 +168,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" id="card">
           <div class="card h-100">
             <a href="./postal-code.html" class="text-decoration-none">
               <img class="card-img-top" alt="Loading image" id="card-img2" />
@@ -184,7 +184,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" id="card">
           <div class="card h-100">
             <a href="./news.html" class="text-decoration-none">
               <img class="card-img-top" alt="Loading image" id="card-img3" />
@@ -200,7 +200,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" id="card">
           <div class="card h-100">
             <a href="./location.html" class="text-decoration-none">
               <img class="card-img-top" alt="Loading image" id="card-img4" />
@@ -216,7 +216,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" id="card">
           <div class="card h-100">
             <a href="./contest.html" class="text-decoration-none">
               <img class="card-img-top" alt="Loading image" id="card-img5" />
@@ -232,7 +232,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" id="card">
           <div class="card h-100">
             <a href="./translation.html" class="text-decoration-none">
               <img class="card-img-top" alt="Loading image" id="card-img6" />
@@ -248,7 +248,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" id="card">
           <div class="card h-100">
             <a href="./qr-gen.html" class="text-decoration-none">
               <img class="card-img-top" alt="Loading image" id="card-img7" />
@@ -264,7 +264,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" id="card">
           <div class="card h-100">
             <a href="./dictionary.html" class="text-decoration-none">
               <img class="card-img-top" alt="Loading image" id="card-img8" />
@@ -280,7 +280,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" id="card">
           <div class="card h-100">
             <a href="./notefy.html"><img class="card-img-top" alt="Loading image" id="card-img9" /></a>
             <div class="card-body">
@@ -294,7 +294,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" id="card">
           <div class="card h-100">
             <a href="./caesar.html"><img class="card-img-top" alt="Loading image" id="card-img10" /></a>
             <div class="card-body">
@@ -308,7 +308,7 @@
             </div>
         </div>    
       </div>
-      <div class="col">
+      <div class="col" id="card">
         <div class="card h-100">
           <a href="./randomcolor-palette.html"><img class="card-img-top" alt="Loading image" id="card-img11" /></a>
           <div class="card-body">
@@ -322,7 +322,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col" id="card">
         <div class="card h-100">
           <a href="./random-joke-generator.html"><img class="card-img-top" alt="Loading image" id="card-img12" /></a>
           <div class="card-body">
@@ -398,5 +398,15 @@
     <!-- <script src="./js/index.js"></script> -->
     <script src="./js/home.js"></script>
     <script src="./js/common.js"></script>
+
+    <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.js"></script>
+    <script>
+      gsap.from('#card', {
+        y: -100,
+        stagger: .2,
+        opacity: 0,
+        duration: 1
+      })
+    </script>
   </body>
 </html>

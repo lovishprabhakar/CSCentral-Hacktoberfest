@@ -14,7 +14,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background:linear-gradient(to right,#ab44a0 , #e66658);;
+    background: linear-gradient(to right, #ab44a0, #e66658);
+    ;
     background-size: cover;
 
 }
@@ -57,8 +58,8 @@
     text-transform: uppercase;
 }
 
-.mover img{
-    margin : 10px 0 0 0 ;
+.mover img {
+    margin: 10px 0 0 0;
 }
 
 .days {
@@ -92,11 +93,9 @@
     text-align: center;
 }
 
-.active{
-
-    background-color :#7d1b6483;
+.active {
+    background-color: #4f114078;
     color: white;
     border-radius: 100px;
     font-weight: bold;
-
 }

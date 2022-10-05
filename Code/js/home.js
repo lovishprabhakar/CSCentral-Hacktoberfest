@@ -237,7 +237,7 @@ function card9Data() {
 
 function card10Data() {
   document.querySelector("#title10").innerHTML =
-    "<i class='bi bi-shield-lock'></i> CSE - CSimplify Encryption";
+    "<i class='bi bi-shield-lock'></i> CCE - Caesar Cipher Encryption";
   document.querySelector("#content10").textContent =
     "This tool will encrypt your message using Caesar Cipher. It is based on the principle of shifting each letter of the message by a fixed number of positions.";
 }
@@ -251,19 +251,19 @@ function card12Data() {
   document.querySelector("#title12").innerHTML =
     "<i class='bi bi-card-text'></i> RJG - Random Joke Generator";
   document.querySelector("#content12").textContent =
-    "'Dad' Jokes are greater than 'Bad' Jokes. Use this tool to learn new jokes and share with your friends to have a great time";
+    "'Dad' Jokes are greater than 'Bad' Jokes. Use this tool to learn new jokes and share with your friends to have a great time.";
 }
 function card13Data() {
   document.querySelector("#title13").innerHTML =
     "<i class='fa fa-cog'></i> CCR- Code Compile Run";
   document.querySelector("#content13").textContent =
-    "Compile and Run your code! Supported languages are C, C++, Java, Python, PHP";
+    "Compile and Run your code! Supported languages are C, C++, Java, Python, PHP.";
 }
 function card14Data() {
   document.querySelector("#title14").innerHTML =
     "<i class='bi bi-shield-lock'></i> EAD - Encryption and Decryption";
   document.querySelector("#content14").textContent =
-    "This tool help to encrypt and decrypt data";
+    "This tool helps you to encrypt and decrypt data to Base 64, to MD5 and from Base 64 respectively.";
 }
 
 // Preloader Code

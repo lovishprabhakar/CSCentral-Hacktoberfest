@@ -138,8 +138,30 @@ body::-webkit-scrollbar-thumb {
   margin-top: 6.9px;
 }
 
+ul {
+  list-style: none;
+}
+
+.quick-link-footer a {
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+.quick-link-footer .linkedin:hover {
+  color: #0077B5;
+}
+.quick-link-footer .github:hover {
+  color: black;
+}
+
 .fa.fa-heart {
   color: #274e8d;
+}
+.fa-github {
+  color: #274e8d;
+  transition: all 0.3s ease-in;
+}
+.fa-github:hover {
+  color: black;
 }
 
 .footer-social-media {

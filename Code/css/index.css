@@ -106,3 +106,70 @@ body::-webkit-scrollbar-thumb {
 #hamburger {
   border: 2px solid #FFABE1;
 }
+
+.footer {
+  width: 100%;
+  background-color: #E83283;
+  color:#274e8d;
+  padding-bottom :10px;
+  margin-top: 69px;
+}
+
+.footer-sections 
+{
+  margin-top: 30px;
+}
+
+.rowcontent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerlasr {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#credits {
+  margin-top: 6.9px;
+}
+
+.fa.fa-heart {
+  color: #274e8d;
+}
+
+.footer-social-media {
+  font-size: 25px;
+}
+.footermaincontent
+{
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  padding: 7px 0;
+  text-align: center;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.2s ease-in;
+}
+.fa-facebook:hover {
+  color: rgb(20, 20, 231);
+}
+.fa-instagram:hover {
+  color: rgb(194, 23, 180);
+}
+.fa-twitter:hover {
+  color: rgb(47, 196, 255);
+}
+.fa-youtube:hover {
+  color: rgba(223, 16, 16, 0.904);
+}

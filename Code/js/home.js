@@ -17,6 +17,7 @@ var card_img10 = document.querySelector("#card-img10");
 var card_img11 = document.querySelector("#card-img11");
 var card_img12 = document.querySelector("#card-img12");
 var card_img13 = document.querySelector("#card-img13");
+var card_img14 = document.querySelector("#card-img14");
 
 
 var cardRow = document.querySelectorAll("#mainRow");
@@ -148,6 +149,10 @@ function render_card_images() {
     "src",
     "https://source.unsplash.com/random/925X617/?programming"
   );
+  card_img14.setAttribute(
+    "src",
+    "https://source.unsplash.com/random/925X617/?decrypt"
+  );
 }
 
 function renderCards() {
@@ -164,6 +169,7 @@ function renderCards() {
   card11Data();
   card12Data();
   card13Data();
+  card14Data();
 }
 
 function card1Data() {
@@ -252,6 +258,12 @@ function card13Data() {
     "<i class='fa fa-cog'></i> CCR- Code Compile Run";
   document.querySelector("#content13").textContent =
     "Compile and Run your code! Supported languages are C, C++, Java, Python, PHP";
+}
+function card14Data() {
+  document.querySelector("#title14").innerHTML =
+    "<i class='bi bi-shield-lock'></i> EAD - Encryption and Decryption";
+  document.querySelector("#content14").textContent =
+    "This tool help to encrypt and decrypt data";
 }
 
 // Preloader Code

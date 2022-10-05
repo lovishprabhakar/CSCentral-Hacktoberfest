@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #ab44a0, #e66658);
+    ;
+    background-size: cover;
+
+}
+
+.calendar {
+    width: 547px;
+    height: 500px;
+    background-color: #a4a3a395;
+
+    /* padding: 1px; */
+    border-radius: 10px;
+}
+
+.month_name {
+    width: 100%;
+    height: 100px;
+    background-color: #4f113f;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 10% 80% 10%;
+    align-items: center;
+    letter-spacing: 3px;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.name {
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 12px 0 0 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+.year_name {
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0px 0px 16px 0px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.mover img {
+    margin: 10px 0 0 0;
+}
+
+.days {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.days div {
+    padding: 0px 25px;
+    font-size: 15px;
+}
+
+.dates {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+
+}
+
+.dates div {
+    font-size: 15px;
+    margin: 1px 2px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.active {
+    background-color: #4f114078;
+    color: white;
+    border-radius: 100px;
+    font-weight: bold;
+}

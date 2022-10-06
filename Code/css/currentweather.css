@@ -30,7 +30,7 @@ body {
     /* padding-left: 20rem; */
     /* margin: auto; */
     /* margin-top: 15rem; */
-    height: 6rem;
+    height: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,6 +87,7 @@ body {
     padding: 20px;
     text-align: center;
     border-radius: 2rem;
+    /* height: 50rem; */
 }
 @media(max-width:700px){
     .app-main{

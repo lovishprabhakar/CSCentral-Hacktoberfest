@@ -235,3 +235,27 @@ ul {
   transition: all 0.2s ease-in-out;
   transform: translateY(4px);
 }
+.bg-primary {
+  --bs-bg-opacity: -1;}
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  max-width: 1200px;
+}
+}
+
+@media (max-width:1199px){
+.nav li a{
+  padding:0px;
+}
+.nav {
+    position: relative;
+    right: 20px;
+}
+header .d-flex #searchCard {
+  margin-right: 0rem; 
+  position: relative;
+  width: 190px;
+  left: 4px;
+}
+}
+

@@ -195,3 +195,43 @@ ul {
 .fa-youtube:hover {
   color: rgba(223, 16, 16, 0.904);
 }
+
+
+#btn-go-top{
+  display:none;
+  position: fixed;
+  bottom: 2vh;
+  right: 2vh;
+  width: 3.8rem;
+  height: 3.8rem;
+  font-size: 3rem;
+  /* padding-bottom: 1vh; */
+  cursor: pointer;
+  color: #2c2e54;
+    bottom: 20px;
+    border-radius: 60%;
+    background-color: #ffffff;   
+   box-shadow: 0px 6px 0px#2c2e54;
+  transition: all 0.2s ease-out;
+  border: none;
+}
+
+#btn-go-top p{
+  position: relative;
+  top: -13%;
+  left: 0%;
+  text-shadow: 0px 0px 2px #fff;
+}
+
+#btn-go-top:hover{
+  background: #587ce0;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out; 
+  color:#ffffff;
+}
+
+#btn-go-top:active{
+  box-shadow: 0 6px #000000;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(4px);
+}

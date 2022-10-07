@@ -4,6 +4,7 @@ body {
   /* background-color: #0a1f44; */
   height: 100%;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .content {
@@ -195,3 +196,28 @@ ul {
 .fa-youtube:hover {
   color: rgba(223, 16, 16, 0.904);
 }
+
+.bg-primary {
+    --bs-bg-opacity: -1;}
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1200px;
+}
+}
+
+@media (max-width:1199px){
+  .nav li a{
+    padding:0px;
+  }
+  .nav {
+      position: relative;
+      right: 20px;
+  }
+  header .d-flex #searchCard {
+    margin-right: 0rem; 
+    position: relative;
+    width: 190px;
+    left: 4px;
+}
+}
+

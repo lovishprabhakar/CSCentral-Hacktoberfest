@@ -266,6 +266,26 @@ function card14Data() {
     "This tool helps you to encrypt and decrypt data to Base 64, to MD5 and from Base 64 respectively.";
 }
 
+//Go to top button
+let mybutton = document.getElementById("btn-go-top");
+
+const scrollGoToTop = ()=>{
+  if (window.scrollY > 1 || document.scrollTop > 1) {
+    mybutton.style.display = "block";
+  } 
+  else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+window.onscroll = function(){scrollGoToTop()}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 // Preloader Code
 document.addEventListener("load", preLoader());
 

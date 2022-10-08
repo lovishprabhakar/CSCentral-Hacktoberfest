@@ -38,7 +38,8 @@ It is a Website that provides combined characteristics of:
 <br>
 
 
-![Preview](https://user-images.githubusercontent.com/89595539/194030725-c66eaf6a-2dac-4494-86a5-773b89f66d1f.png)
+![Preview](https://user-images.githubusercontent.com/89595539/194697064-e115e22c-b219-45a8-a1f7-b20359d1c166.png)
+
 
 
 Here! we welcome everyone to contribute to our project. You can contribute in several ways not just in code (E.g. Technical writing , collaborate in developing the website).

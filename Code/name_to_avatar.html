@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name To Avatar</title>
+    <link rel="stylesheet" href="css/name_to_avatar.css">
+    <link
+    rel="shortcut icon"
+    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLo7gB9lFCW0lf0KR2genMUcM33ZZgvpcaw&usqp=CAU"
+    type="image/png"
+  />
+</head>
+<body>
+
+	<section>
+		<h1>WHAT DOES YOUR NAME SAY ABOUT YOUR PERSONALITY</h1>
+		<div class="centerDiv">
+		<div class="details">
+			<label>ENTER YOUR NAME</label><br>
+			<input type="text" name="" id="nameid">
+		</div>
+
+		<div class="imgdiv">
+			<img src="assets/image.jpg" width="200" height="200" class="imgchange">
+		</div>
+
+		<button>Click Me</button>
+	</div>
+
+	</section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$('button').click(function(){
+			const name = $('#nameid').val();
+			alert(name);
+			$('.imgchange').attr('src',`https://joeschmoe.io/api/v1/${name}`);
+			const b = $('.imgchange');
+			console.log(b);
+		});
+	});
+</script>
+</body>
+</html>

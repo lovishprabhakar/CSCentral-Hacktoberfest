@@ -46,14 +46,17 @@ h1.h3.mb-3.my-4.fw-normal.text-center {
 body::-webkit-scrollbar {
   width: 11px;
 }
+
 .card:hover {
   background-color: rgb(132, 94, 144);
   transform: scale(1.025);
 }
+
 #code-card:hover {
   background-color: inherit;
   transform: none;
 }
+
 #news-container:hover {
   background-color: initial;
   transform: none;
@@ -62,28 +65,28 @@ body::-webkit-scrollbar {
 
 
 body::-webkit-scrollbar-track {
-  background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgb(0, 35, 211) 70%);
+  background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgb(0, 35, 211) 70%);
 }
 
 body::-webkit-scrollbar-thumb {
   background: transparent;
   box-shadow: 0px 0px 0px 100000vh rgb(45, 42, 42);
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 
 
-#preloader{
-    background: #fdcfff url('../assets/preloader.gif') no-repeat center center;
-    background-size: 20%;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    z-index: 10;
+#preloader {
+  background: #fdcfff url('../assets/preloader.gif') no-repeat center center;
+  background-size: 20%;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
 }
-#home-cookie
-{
-    width: 60%;
+
+#home-cookie {
+  width: 60%;
   background-color: #90a4ae;
   border-radius: 6px;
   border: 3px solid #cfd8dc;
@@ -109,14 +112,14 @@ body::-webkit-scrollbar-thumb {
 
 .footer {
   width: 100%;
-  background-color: #E83283;
-  color:#274e8d;
-  padding-bottom :10px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(104, 109, 195, 1) 38%, rgba(0, 212, 255, 1) 100%);
+  color: #274e8d;
+  padding-bottom: 10px;
   margin-top: 69px;
 }
 
-.footer-sections 
-{
+.footer-sections {
   margin-top: 30px;
 }
 
@@ -146,12 +149,15 @@ ul {
   text-decoration: none;
   transition: all 0.3s ease-in;
 }
+
 .quick-link-footer .linkedin:hover {
   color: #0077B5;
 }
+
 .fa-linkedin:hover {
   color: #0a66c2;
 }
+
 .quick-link-footer .github:hover {
   color: black;
 }
@@ -159,10 +165,12 @@ ul {
 .fa.fa-heart {
   color: #274e8d;
 }
+
 .fa-github {
   color: #274e8d;
   transition: all 0.3s ease-in;
 }
+
 .fa-github:hover {
   color: black;
 }
@@ -170,8 +178,8 @@ ul {
 .footer-social-media {
   font-size: 25px;
 }
-.footermaincontent
-{
+
+.footermaincontent {
   font-size: 14px;
   color: white;
   font-weight: 400;
@@ -186,22 +194,26 @@ ul {
   color: #ffffff;
   transition: all 0.2s ease-in;
 }
+
 .fa-facebook:hover {
   color: #3b5998;
 }
+
 .fa-instagram:hover {
   color: rgb(194, 23, 180);
 }
+
 .fa-twitter:hover {
   color: rgb(47, 196, 255);
 }
+
 .fa-youtube:hover {
   color: rgba(223, 16, 16, 0.904);
 }
 
 
-#btn-go-top{
-  display:none;
+#btn-go-top {
+  display: none;
   position: fixed;
   bottom: 2vh;
   right: 2vh;
@@ -211,54 +223,63 @@ ul {
   /* padding-bottom: 1vh; */
   cursor: pointer;
   color: #2c2e54;
-    bottom: 20px;
-    border-radius: 60%;
-    background-color: #ffffff;   
-   box-shadow: 0px 6px 0px#2c2e54;
+  bottom: 20px;
+  border-radius: 60%;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 0px#2c2e54;
   transition: all 0.2s ease-out;
   border: none;
 }
 
-#btn-go-top p{
+#btn-go-top p {
   position: relative;
   top: -13%;
   left: 0%;
   text-shadow: 0px 0px 2px #fff;
 }
 
-#btn-go-top:hover{
+#btn-go-top:hover {
   background: #587ce0;
   font-weight: 600;
-  transition: all 0.2s ease-in-out; 
-  color:#ffffff;
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
 }
 
-#btn-go-top:active{
+#btn-go-top:active {
   box-shadow: 0 6px #000000;
   transition: all 0.2s ease-in-out;
   transform: translateY(4px);
 }
+
 .bg-primary {
-  --bs-bg-opacity: -1;}
-@media (min-width: 1200px){
-.container, .container-lg, .container-md, .container-sm, .container-xl {
-  max-width: 1200px;
-}
+  --bs-bg-opacity: -1;
 }
 
-@media (max-width:1199px){
-.nav li a{
-  padding:0px;
+@media (min-width: 1200px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1200px;
+  }
 }
-.nav {
+
+@media (max-width:1199px) {
+  .nav li a {
+    padding: 0px;
+  }
+
+  .nav {
     position: relative;
     right: 20px;
-}
-header .d-flex #searchCard {
-  margin-right: 0rem; 
-  position: relative;
-  width: 190px;
-  left: 4px;
-}
-}
+  }
 
+  header .d-flex #searchCard {
+    margin-right: 0rem;
+    position: relative;
+    width: 190px;
+    left: 4px;
+  }
+}

@@ -8,7 +8,7 @@ var more_input_1 = document.querySelector("#more-input-1");
 var more_input_2 = document.querySelector("#more-input-2");
 var result_value;
 
-fetch("./json/currencies.json")
+fetch('https://v6.exchangerate-api.com/v6/38cdd633b5f8039d1c28a218/latest/USD')
     .then((res) => {
         return res.json();
     })
@@ -54,7 +54,9 @@ function displayResults() {
     fetch(
             `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${convert_from}/${convert_to}.json`
         )
-        .then((response) => {
+        .then(
+            
+            (response) => {
             return response.json();
         })
         .then((data) => {

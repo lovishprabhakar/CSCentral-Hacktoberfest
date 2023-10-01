@@ -18,6 +18,7 @@ var card_img11 = document.querySelector("#card-img11");
 var card_img12 = document.querySelector("#card-img12");
 var card_img13 = document.querySelector("#card-img13");
 var card_img14 = document.querySelector("#card-img14");
+var card_img15 = document.querySelector("#card-img15");
 
 
 var cardRow = document.querySelectorAll("#mainRow");
@@ -153,6 +154,10 @@ function render_card_images() {
     "src",
     "https://source.unsplash.com/random/925X617/?decrypt"
   );
+  card_img15.setAttribute(
+    "src",
+    "https://source.unsplash.com/random/925X617/?coding"
+  );
 }
 
 function renderCards() {
@@ -209,7 +214,7 @@ function card5Data() {
 
 function card6Data() {
   document.querySelector("#title6").innerHTML =
-    "<i class='bi bi-code-translate'></i> CST - CSimplify Translation";
+    "<i class='bi bi-code-translate'></i> CST - CS Central Translation";
   document.querySelector("#content6").textContent =
     "This tool will translate from the default language of English to any of the languages you specify.";
 }
@@ -223,7 +228,7 @@ function card7Data() {
 
 function card8Data() {
   document.querySelector("#title8").innerHTML =
-    "<i class='bi bi-journal-bookmark-fill'></i> CSD - CSimplify Dictionary";
+    "<i class='bi bi-journal-bookmark-fill'></i> CSD - CS Central Dictionary";
   document.querySelector("#content8").textContent =
     "This gathers information about a word and instructs when and where it should be used, as well as how to pronounce it. Expand your vocabulary.";
 }
@@ -263,6 +268,12 @@ function card14Data() {
   document.querySelector("#title14").innerHTML =
     "<i class='bi bi-shield-lock'></i> EAD - Encryption and Decryption";
   document.querySelector("#content14").textContent =
+    "This tool helps you to encrypt and decrypt data to Base 64, to MD5 and from Base 64 respectively.";
+}
+function card15Data() {
+  document.querySelector("#title15").innerHTML =
+    "<i class='bi bi-code'></i> PPH - Polyglot Project Hub";
+  document.querySelector("#content15").textContent =
     "This tool helps you to encrypt and decrypt data to Base 64, to MD5 and from Base 64 respectively.";
 }
 

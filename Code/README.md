@@ -2,7 +2,7 @@
 <br>
 <br>
 <h1 align="center">
- C-Simplify
+ CS Central
 </h1>
 
 <h2>
@@ -14,10 +14,10 @@ During the entire month of October 2022, all you have to do is contribute to any
 
 If you’ve never contributed to open source before, this is the perfect time to get started because Hacktoberfest provides a large list of available contribution opportunities.
 
-# Contribute to CSimplify
-CSimplify is a website that makes life easy for students, especially CSE students by making some daily-life used web apps available at one place.
+# Contribute to CS Central
+CS Central is a website that makes life easy for students, especially CSE students by making some daily-life used web apps available at one place.
 
-Yes!!, you're here!✨. This is the first step in making your contribution to the C-Simplify project. <br> This documentation will serve as a guide for making your contibutions to this project. Follow the steps stated below carefully.
+Yes!!, you're here!✨. This is the first step in making your contribution to the CS Central project. <br> This documentation will serve as a guide for making your contibutions to this project. Follow the steps stated below carefully.
 
 Finally, we can't wait to see your outstanding issues and pull requests. Welcome 😇❤
 
@@ -55,7 +55,7 @@ Team working with a lot of folks which is very good for the growth 📈 of the p
 - Just make sure that you push only the files that you have worked upon.
 - ## Demo
 
-Check out the website: https://lovishprabhakar.github.io/C-Simplify/Code/index.html
+Check out the website: https://lovishprabhakar.github.io/CS Central/Code/index.html
 
 
 ## Tech stack
@@ -78,25 +78,25 @@ At this point you are ready to take on the world of open source contribution!!.
 2. After the issue is accepted and `hacktoberfest-accepted` label is added to it, you can start working on your local repository.
 3. Push your local changes to remote and create a Pull Request. That's all! Your changes will then be reviewed by the maintainer.
 
-For step by step explanation of how to push your local changes to remote, see our [CONTRIBUTING.md](https://github.com/lovishprabhakar/C-Simplify/blob/main/CONTRIBUTING.md) file.
+For step by step explanation of how to push your local changes to remote, see our [CONTRIBUTING.md](https://github.com/lovishprabhakar/CS Central/blob/main/CONTRIBUTING.md) file.
 
 # Code review process
 
-The maintainer of C-Simplify looks at Pull Requests on a regular basis and carries out merging or comments on the requests. You can close a pull request if it isn't showing any activity after two weeks.
+The maintainer of CS Central looks at Pull Requests on a regular basis and carries out merging or comments on the requests. You can close a pull request if it isn't showing any activity after two weeks.
 
 # Contributing Guidelines
 
-Any contributions you make are truly appreciated, go to our [CONTRIBUTING.md](https://github.com/lovishprabhakar/C-Simplify/blob/main/CONTRIBUTING.md) file for more information.
+Any contributions you make are truly appreciated, go to our [CONTRIBUTING.md](https://github.com/lovishprabhakar/CS Central/blob/main/CONTRIBUTING.md) file for more information.
 
 ## Code of Conduct
 
-View [CODE_OF_CONDUCT.md](https://github.com/lovishprabhakar/C-Simplify/blob/main/CODE_OF_CONDUCT.md)
+View [CODE_OF_CONDUCT.md](https://github.com/lovishprabhakar/CS Central/blob/main/CODE_OF_CONDUCT.md)
 
 
 ## Thanks to all Contributors
 
-<a href="https://github.com/lovishprabhakar/C-Simplify/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=lovishprabhakar/C-Simplify" />
+<a href="https://github.com/lovishprabhakar/CS Central/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=lovishprabhakar/CS Central" />
 </a>
 
 

@@ -15,6 +15,11 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+.dropdown-content{
+  height: 200px;
+  width: 100px;
+  overflow: auto;
+}
 
 .card-img,
 .card-img-bottom,
@@ -199,6 +204,10 @@ ul {
   color: rgba(223, 16, 16, 0.904);
 }
 
+#logo{
+  padding-bottom: 13px;
+  padding-right: 5px;
+}
 
 #btn-go-top{
   display:none;

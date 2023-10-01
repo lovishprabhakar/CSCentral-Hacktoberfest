@@ -14,7 +14,7 @@ During the entire month of October 2023, all you have to do is contribute to any
 
 If you’ve never contributed to open source before, this is the perfect time to get started because Hacktoberfest provides many available contribution opportunities.
 
-# Contribute to CSimplify
+# Contribute to CS Central
 CS Central is a website that makes life easy for students, especially CSE students by making some daily-life web apps available in one place.
 
 Yes!!, you're here!✨. This is the first step in making your contribution to the CSCentral-Hacktoberfest project. <br> This documentation will serve as a guide for making your contributions to this project. Follow the steps stated below carefully.

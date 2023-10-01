@@ -8,6 +8,7 @@ on:
 
 jobs:
   slash_assign:
+    permissions: write-all
     # If the acton was triggered by a new comment that starts with `/assign`
     # or a on a schedule
     if: >

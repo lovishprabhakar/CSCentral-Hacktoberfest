@@ -2,6 +2,7 @@ var input_text = document.querySelector("#input_text");
 var generate_qr = document.querySelector("#generate_qr");
 var result = document.querySelector("#result");
 var downloadBtn = document.querySelector("#downloadBtn");
+var size=document.getElementById("size");
 
 generate_qr.addEventListener("click", newQRFun);
 
@@ -19,6 +20,12 @@ function newQRFun() {
     }
 }
 
+let sizes=size.value;
+size.addEventListener('change',(e)=>{
+    sizes=e.target.value;
+    isEmpty();
+});
+
 function generate(user_input) {
     if (downloadBtn.childNodes.length == 1) {
         downloadBtn.removeChild(downloadBtn.firstElementChild);
@@ -27,8 +34,8 @@ function generate(user_input) {
 
     var qrcode = new QRCode(result, {
         text: `${user_input.value}`,
-        width: 180, //128
-        height: 180,
+        width: sizes, //128
+        height: sizes,
         colorDark: "#000000",
         colorLight: "#ffffff",
         correctLevel: QRCode.CorrectLevel.H,

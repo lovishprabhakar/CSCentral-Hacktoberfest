@@ -1,121 +1,129 @@
 body {
-    background-image: url(ok.png);
-    height: 100vh;
-    background-size: cover;
-    font-family: 'Roboto Condensed', sans-serif;
+  background-image: url(ok.png);
+  height: 100vh;
+  background-size: cover;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
-ul, li {
-    list-style: none outside none;
+ul,
+li {
+  list-style: none outside none;
 }
 
 /* basic menu styles */
 
 .nav-menu {
-    display: block;
-    background: #74adaa;
-    width: 1100px;
-    margin: 30px auto 30px;
+  display: block;
+  background: #74adaa;
+  width: 1100px;
+  margin: 30px auto 30px;
 }
 
-.nav-menu>li {
-    display: inline;
-    float: left;
-    border-right: 1px solid #333;
-    position: relative;
+.nav-menu > li {
+  display: inline;
+  float: left;
+  border-right: 1px solid #333;
+  position: relative;
 }
 
-.nav-menu>li:last-child {
-    border-right: none;
+.nav-menu > li:last-child {
+  border-right: none;
 }
 
 .nav-menu li a {
-    color: #fff;
-    display: block;
-    text-decoration: none;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-transform: uppercase;
-    overflow: visible;
-    line-height: 20px;
-    font-weight: 300;
-    font-size: 14px;
-    letter-spacing: 1px;
-    padding: 15px 30px 15px 31px;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  overflow: visible;
+  line-height: 20px;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 15px 30px 15px 31px;
 }
 
 /* animation domination */
 
 .three-d {
-    perspective: 200px;
-    transition: all .07s linear;
-    position: relative;
+  perspective: 200px;
+  transition: all 0.07s linear;
+  position: relative;
 }
 
 .three-d:not(.active):hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.three-d:not(.active):hover .three, .three-d:not(.active):focus .three {
-    transform: translateZ(-25px) rotateX(90deg);
+.three-d:not(.active):hover .three,
+.three-d:not(.active):focus .three {
+  transform: translateZ(-25px) rotateX(90deg);
 }
 
 .three {
-    transition: all .3s ease-out;
-    transform: translatez(-25px);
-    transform-style: preserve-3d;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
+  transition: all 0.3s ease-out;
+  transform: translatez(-25px);
+  transform-style: preserve-3d;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .front {
-    transform: rotatex(0deg) translatez(25px);
+  transform: rotatex(0deg) translatez(25px);
 }
 
 .back {
-    transform: rotatex(-90deg) translatez(25px);
-    color: #FFE7C4;
+  transform: rotatex(-90deg) translatez(25px);
+  color: #ffe7c4;
 }
 
-.front, .back {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #333;
-    padding: 15px 30px 15px 31px;
-    color: white;
-    pointer-events: none;
-    box-sizing: border-box;
+.front,
+.back {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #333;
+  padding: 15px 30px 15px 31px;
+  color: white;
+  pointer-events: none;
+  box-sizing: border-box;
 }
 
-.nav-menu li .active .front, .nav-menu li .active .back, .nav-menu li a:hover .front, .nav-menu li a:hover .back {
-    background-color: yellow;
-    background-size: 5px 5px;
-    background-position: 0 0, 30px 30px;
-    color: black;
+.nav-menu li .active .front,
+.nav-menu li .active .back,
+.nav-menu li a:hover .front,
+.nav-menu li a:hover .back {
+  background-color: yellow;
+  background-size: 5px 5px;
+  background-position:
+    0 0,
+    30px 30px;
+  color: black;
 }
 
 .nav-menu ul {
-    position: absolute;
-    left: -40px;
-    text-align: left;
-    line-height: 40px;
-    font-size: 10px;
-    width: 200px;
-    transition: all 0.3s ease-in;
-    transform-origin: 0px 0px;
-    transform: rotateX(-90deg);
-    backface-visibility: hidden;
+  position: absolute;
+  left: -40px;
+  text-align: left;
+  line-height: 40px;
+  font-size: 10px;
+  width: 200px;
+  transition: all 0.3s ease-in;
+  transform-origin: 0px 0px;
+  transform: rotateX(-90deg);
+  backface-visibility: hidden;
 }
 
-.nav-menu>li:hover ul {
-    display: block;
-    transform: rotateX(0deg);
+.nav-menu > li:hover ul {
+  display: block;
+  transform: rotateX(0deg);
 }

@@ -10,11 +10,12 @@
 </h2>
 Hacktoberfest is the easiest way to get into open source! Hacktoberfest is a month long celebration of open source code presented by Digital Ocean.
 
-During the entire month of October 2022, all you have to do is contribute to any open source project with the hacktoberfest tag and open at least 4 pull requests which follow the [Hacktoberfest guidelines](https://hacktoberfest.digitalocean.com/faq). It can be any project mentioned below and you can contribute in any way possible. It can be a be a bug fix, optimisation, feature addition or even a documentation enhancement! 
+During the entire month of October 2022, all you have to do is contribute to any open source project with the hacktoberfest tag and open at least 4 pull requests which follow the [Hacktoberfest guidelines](https://hacktoberfest.digitalocean.com/faq). It can be any project mentioned below and you can contribute in any way possible. It can be a be a bug fix, optimisation, feature addition or even a documentation enhancement!
 
 If you’ve never contributed to open source before, this is the perfect time to get started because Hacktoberfest provides a large list of available contribution opportunities.
 
 # Contribute to CS Central
+
 CS Central is a website that makes life easy for students, especially CSE students by making some daily-life used web apps available at one place.
 
 Yes!!, you're here!✨. This is the first step in making your contribution to the CS Central project. <br> This documentation will serve as a guide for making your contibutions to this project. Follow the steps stated below carefully.
@@ -22,7 +23,9 @@ Yes!!, you're here!✨. This is the first step in making your contribution to th
 Finally, we can't wait to see your outstanding issues and pull requests. Welcome 😇❤
 
 ## Features
+
 It is a Website that provides combined characteristics of:
+
 - Code, Compile and Run
 - Currency Converter
 - Post Office Locator
@@ -37,9 +40,7 @@ It is a Website that provides combined characteristics of:
 
 <br>
 
-
 ![Preview](https://user-images.githubusercontent.com/89595539/194030725-c66eaf6a-2dac-4494-86a5-773b89f66d1f.png)
-
 
 Here! we welcome everyone to contribute to our project. You can contribute in several ways not just in code (E.g. Technical writing , collaborate in developing the website).
 Team working with a lot of folks which is very good for the growth 📈 of the project but most of times can lead to conflicting interests and point of views 👈👉. So , Below are set of rules 📖 that guide you for participating in this project.
@@ -47,7 +48,6 @@ Team working with a lot of folks which is very good for the growth 📈 of the p
 - Openess 👐. Collaboration is only possible if everyone is open to share ideas.
 - Respect 👨🏾‍🤝‍👨🏽. Having respect for everyone, their skills and opinions is paramount.
 - Welcoming tone or politeness 😇: It is expected that you interact with others in an optimistic and cheerful manner.
-
 
 # Things to take care while making a PR:
 
@@ -57,7 +57,6 @@ Team working with a lot of folks which is very good for the growth 📈 of the p
 
 Check out the website: https://lovishprabhakar.github.io/CS Central/Code/index.html
 
-
 ## Tech stack
 
 ![HTML5](https://img.shields.io/badge/html-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -66,8 +65,8 @@ Check out the website: https://lovishprabhakar.github.io/CS Central/Code/index.h
 ![JavaScript](https://img.shields.io/badge/JavaScirpt-305FCB?style=for-the-badge&logo=JavaScript&logoColor=white)
 ![Json](https://img.shields.io/badge/Json-305FCB?style=for-the-badge&logo=Json&logoColor=white)
 
-
 # Your First Contribution
+
 Is this your first time contributing to an open source project? If yes, Welcome!!✨🎉💃🏾 Here is a [great tutorial](https://app.egghead.io/playlists/how-to-contribute-to-an-open-source-project-on-github) on how to contribute to an open source project.
 
 At this point you are ready to take on the world of open source contribution!!.
@@ -92,15 +91,14 @@ Any contributions you make are truly appreciated, go to our [CONTRIBUTING.md](ht
 
 View [CODE_OF_CONDUCT.md](https://github.com/lovishprabhakar/CS Central/blob/main/CODE_OF_CONDUCT.md)
 
-
 ## Thanks to all Contributors
 
 <a href="https://github.com/lovishprabhakar/CS Central/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=lovishprabhakar/CS Central" />
 </a>
 
-
 ## License
+
 ![License: Apache](https://img.shields.io/badge/license-Apache-blue)
 
 If you liked this project, please leave a 🌟

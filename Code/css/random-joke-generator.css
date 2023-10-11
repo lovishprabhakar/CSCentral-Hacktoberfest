@@ -11,32 +11,29 @@
   justify-content: center;
   width: 80vw;
   text-align: center;
-  border-color: rgba(176, 176, 176, .5);
+  border-color: rgba(176, 176, 176, 0.5);
   transition: all 0.5s ease-in-out;
   margin: auto;
 }
-
 
 .contianer2 h3 {
   margin: 250;
   letter-spacing: 10px;
   opacity: 5;
-
 }
 
 .joke {
-
   font-size: 30px;
   line-height: 40px;
   margin: 50px auto;
   font-weight: normal;
   max-width: 600px;
 
-  -webkit-transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -ms-transition: opacity .5s ease-in-out;
-  -o-transition: opacity .5s ease-in-out;
-  transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 
   font-size: 30px;
   line-height: 40px;
@@ -60,7 +57,9 @@
   background-color: #a3d279;
   font-weight: bold;
   color: black;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0, 0.1);
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.1),
+    0 6px 6px rgba(0, 0, 0, 0, 0.1);
 }
 
 .btn:active {
@@ -96,7 +95,6 @@
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #262626 transparent transparent transparent;
-
 }
 
 .lds-ring div:nth-child(1) {
@@ -120,8 +118,6 @@
     transform: rotate(360deg);
   }
 }
-
-
 
 @media only screen and (max-width: 600px) {
   .container {

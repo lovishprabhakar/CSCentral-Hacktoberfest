@@ -19,7 +19,7 @@ jobs:
       - name: Assign the user or unassign stale assignments
         uses: JasonEtco/slash-assign-action@v0.0.3
         with:
-#           required_label: Up-For-Grab
+          #           required_label: Up-For-Grab
           assigned_label: hacktoberfest-accepted
           days_until_warning: 2
           days_until_unassign: 1

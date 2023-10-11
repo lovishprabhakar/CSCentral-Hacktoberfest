@@ -1,89 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CS Central - NEWS</title>
     <link
-    rel="shortcut icon"
-    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLo7gB9lFCW0lf0KR2genMUcM33ZZgvpcaw&usqp=CAU"
-    type="image/png"
-  />
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLo7gB9lFCW0lf0KR2genMUcM33ZZgvpcaw&usqp=CAU"
+      type="image/png"
+    />
     <!-- CSS only -->
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <script src="https://code.jquery.com/jquery-3.6.1.js"
-    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/42d5adcbca.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-<div id="preloader"></div>
+  <body>
+    <div id="preloader"></div>
     <!-- Header  -->
     <header>
-        <div class="bg-dark collapse " id="navbarHeader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-white">About</h4>
-                        <p class="text-muted" id="header_info">
-                        </p>
-                    </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">Contact</h4>
-                        <ul class="list-unstyled" id="header_list">
-
-                        </ul>
-                    </div>
-                </div>
+      <div class="bg-dark collapse" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted" id="header_info"></p>
             </div>
-        </div>
-        <div class="navbar navbar-dark bg-primary shadow-sm">
-            <div class="container">
-                <a href="./index.html" class="navbar-brand d-flex align-items-center">
-                    <i class="bi bi-balloon-heart-fill fs-1"></i>
-                    <strong><h1>CS Central</h1></strong>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled" id="header_list"></ul>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="navbar navbar-dark bg-primary shadow-sm">
+        <div class="container">
+          <a href="./index.html" class="navbar-brand d-flex align-items-center">
+            <i class="bi bi-balloon-heart-fill fs-1"></i>
+            <strong><h1>CS Central</h1></strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
     </header>
     <div id="hero">
-        <h3 class="text-light" id="hero-text"><i class="bi bi-newspaper"></i> MRI - Most Recent Info</h3>
+      <h3 class="text-light" id="hero-text">
+        <i class="bi bi-newspaper"></i> MRI - Most Recent Info
+      </h3>
     </div>
     <!-- News  -->
-    <div class="container card text-center"  id="news-container">
-        <div class="card-header">
-            <button class="my-2 btn btn-sm btn-dark text-light" id="all" onclick="fetchNews('all')">All</button>
-            <button class="my-2 btn btn-sm btn-outline-dark text-light" id="national" onclick="fetchNews('national')">Indian NEWS</button>
-            <button class="my-2 btn btn-sm btn-outline-dark text-light" id="business" onclick="fetchNews('business')">Business</button>
-            <button class="my-2 btn btn-sm btn-outline-dark text-light" id="sports" onclick="fetchNews('sports')">Sports</button>
-            <button class="my-2 btn btn-sm btn-outline-dark text-light" id="world" onclick="fetchNews('world')">World</button>
-            <button class="my-2 btn btn-sm btn-outline-dark text-light" id="politics" onclick="fetchNews('politics')">Politics</button>
-            <button class="my-2 btn btn-sm btn-outline-dark text-light" id="technology" onclick="fetchNews('technology')">Technology</button>
-            <button class="my-2 btn btn-sm btn-outline-dark text-light" id="startup" onclick="fetchNews('startup')">Startup</button>
-            <button class="my-2 btn btn-sm btn-outline-dark text-light" id="entertainment" onclick="fetchNews('entertainment')">Entertainment</button>
-            <button class="my-2 btn btn-sm btn-outline-dark text-light" id="miscellaneous" onclick="fetchNews('miscellaneous')">Miscellaneous</button>
-            <button class="my-2 btn btn-sm btn-outline-dark text-light" id="science" onclick="fetchNews('science')">Science</button>
-        </div>
-        <div id="loading" class="text-center"></div>
-        <div class="card-body d-flex flex-column" id="news_cards">
-        </div>
+    <div class="container card text-center" id="news-container">
+      <div class="card-header">
+        <button
+          class="my-2 btn btn-sm btn-dark text-light"
+          id="all"
+          onclick="fetchNews('all')"
+        >
+          All
+        </button>
+        <button
+          class="my-2 btn btn-sm btn-outline-dark text-light"
+          id="national"
+          onclick="fetchNews('national')"
+        >
+          Indian NEWS
+        </button>
+        <button
+          class="my-2 btn btn-sm btn-outline-dark text-light"
+          id="business"
+          onclick="fetchNews('business')"
+        >
+          Business
+        </button>
+        <button
+          class="my-2 btn btn-sm btn-outline-dark text-light"
+          id="sports"
+          onclick="fetchNews('sports')"
+        >
+          Sports
+        </button>
+        <button
+          class="my-2 btn btn-sm btn-outline-dark text-light"
+          id="world"
+          onclick="fetchNews('world')"
+        >
+          World
+        </button>
+        <button
+          class="my-2 btn btn-sm btn-outline-dark text-light"
+          id="politics"
+          onclick="fetchNews('politics')"
+        >
+          Politics
+        </button>
+        <button
+          class="my-2 btn btn-sm btn-outline-dark text-light"
+          id="technology"
+          onclick="fetchNews('technology')"
+        >
+          Technology
+        </button>
+        <button
+          class="my-2 btn btn-sm btn-outline-dark text-light"
+          id="startup"
+          onclick="fetchNews('startup')"
+        >
+          Startup
+        </button>
+        <button
+          class="my-2 btn btn-sm btn-outline-dark text-light"
+          id="entertainment"
+          onclick="fetchNews('entertainment')"
+        >
+          Entertainment
+        </button>
+        <button
+          class="my-2 btn btn-sm btn-outline-dark text-light"
+          id="miscellaneous"
+          onclick="fetchNews('miscellaneous')"
+        >
+          Miscellaneous
+        </button>
+        <button
+          class="my-2 btn btn-sm btn-outline-dark text-light"
+          id="science"
+          onclick="fetchNews('science')"
+        >
+          Science
+        </button>
+      </div>
+      <div id="loading" class="text-center"></div>
+      <div class="card-body d-flex flex-column" id="news_cards"></div>
     </div>
     <div id="myFooter"></div>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <!-- <script src="./js/index.js"></script> -->
     <script src="./js/news.js"></script>
     <script src="./js/common.js"></script>
-</body>
-
+  </body>
 </html>

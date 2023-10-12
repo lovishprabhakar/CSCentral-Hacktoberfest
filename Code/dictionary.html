@@ -1,88 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CS Central - CS Central Dictionary</title>
     <link
-    rel="shortcut icon"
-    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLo7gB9lFCW0lf0KR2genMUcM33ZZgvpcaw&usqp=CAU"
-    type="image/png"
-  />
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLo7gB9lFCW0lf0KR2genMUcM33ZZgvpcaw&usqp=CAU"
+      type="image/png"
+    />
     <!-- CSS only -->
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.js"
-    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/42d5adcbca.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-<div id="preloader"></div>
+  <body>
+    <div id="preloader"></div>
     <!-- Header  -->
     <header>
-        <div class="bg-dark collapse " id="navbarHeader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-white">About</h4>
-                        <p class="text-muted" id="header_info">
-                        </p>
-                    </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">Contact</h4>
-                        <ul class="list-unstyled" id="header_list">
-                        </ul>
-                    </div>
-                </div>
+      <div class="bg-dark collapse" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted" id="header_info"></p>
             </div>
-        </div>
-        <div class="navbar navbar-dark bg-primary shadow-sm">
-            <div class="container">
-                <a href="./index.html" class="navbar-brand d-flex align-items-center">
-                    <i class="bi bi-balloon-heart-fill fs-1"></i>
-                    <strong><h1>CS Central</h1></strong>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled" id="header_list"></ul>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="navbar navbar-dark bg-primary shadow-sm">
+        <div class="container">
+          <a href="./index.html" class="navbar-brand d-flex align-items-center">
+            <i class="bi bi-balloon-heart-fill fs-1"></i>
+            <strong><h1>CS Central</h1></strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
     </header>
     <div id="hero">
-        <h3 class="text-light" id="hero-text"><i class='bi bi-journal-bookmark-fill'></i> CSD - CS Central Dictionary</h3>
+      <h3 class="text-light" id="hero-text">
+        <i class="bi bi-journal-bookmark-fill"></i> CSD - CS Central Dictionary
+      </h3>
     </div>
     <div class="container my-2">
-        <div class="card">
-            <div class="card-header d-flex text-center text-capitalize py-2 flex-container">
-                <label for="">Search Word: </label>
-                <input type="text" name="" id="input" class="form-control form-control-sm">
-                <input type="button" value="Search" id="searchInput" class="btn btn-sm btn-danger">
-            </div>
-            <div class="card-body" id="result_data">
-
-            </div>
-
+      <div class="card">
+        <div
+          class="card-header d-flex text-center text-capitalize py-2 flex-container"
+        >
+          <label for="">Search Word: </label>
+          <input
+            type="text"
+            name=""
+            id="input"
+            class="form-control form-control-sm"
+          />
+          <input
+            type="button"
+            value="Search"
+            id="searchInput"
+            class="btn btn-sm btn-danger"
+          />
         </div>
-
-    </div>
-
-
+        <div class="card-body" id="result_data"></div>
+      </div>
     </div>
 
     <div id="myFooter"></div>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js "
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p "
+      crossorigin="anonymous "
+    ></script>
     <script src="./js/common.js "></script>
     <script src="./js/dictionary.js "></script>
-</body>
-
+  </body>
 </html>

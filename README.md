@@ -10,11 +10,12 @@
 </h2>
 Hacktoberfest is the easiest way to get into open source! Hacktoberfest is a month-long celebration of open-source code presented by Digital Ocean.
 
-During the entire month of October 2023, all you have to do is contribute to any open-source project with the hacktoberfest tag and open at least 4 pull requests which follow the [Hacktoberfest guidelines](https://hacktoberfest.digitalocean.com/faq). It can be any project mentioned below and you can contribute in any way possible. It can be a bug fix, optimisation, feature addition or even a documentation enhancement! 
+During the entire month of October 2023, all you have to do is contribute to any open-source project with the hacktoberfest tag and open at least 4 pull requests which follow the [Hacktoberfest guidelines](https://hacktoberfest.digitalocean.com/faq). It can be any project mentioned below and you can contribute in any way possible. It can be a bug fix, optimisation, feature addition or even a documentation enhancement!
 
 If you’ve never contributed to open source before, this is the perfect time to get started because Hacktoberfest provides many available contribution opportunities.
 
 # Contribute to CS Central
+
 CS Central is a website that makes life easy for students, especially CSE students by making some daily-life web apps available in one place.
 
 Yes!!, you're here!✨. This is the first step in making your contribution to the CSCentral-Hacktoberfest project. <br> This documentation will serve as a guide for making your contributions to this project. Follow the steps stated below carefully.
@@ -22,6 +23,7 @@ Yes!!, you're here!✨. This is the first step in making your contribution to th
 Finally, we can't wait to see your outstanding issues and pull requests. Welcome 😇❤
 
 &nbsp;&nbsp;&nbsp;&nbsp;CS Central is a website that provides combined characteristics of:
+
 - Online Compiler
 - Polyglot Projects
 - Programming Competition Finder
@@ -37,10 +39,7 @@ Finally, we can't wait to see your outstanding issues and pull requests. Welcome
 
 <br>
 
-
 ![cscentral](https://user-images.githubusercontent.com/89595539/232108989-cd2a67a7-30de-45cd-92f0-adbe88117786.png)
-
-
 
 Here! we welcome everyone to contribute to our project. You can contribute in several ways not just in code (E.g. Technical writing, collaboration in developing the website).
 Team working with a lot of folks is very good for the growth 📈 of the project but most of the time can lead to conflicting interests and points of view 👈👉. So, Below are set of rules 📖 that guide you for participating in this project.
@@ -48,7 +47,6 @@ Team working with a lot of folks is very good for the growth 📈 of the project
 - Openness 👐. Collaboration is only possible if everyone is open to sharing ideas.
 - Respect 👨🏾‍🤝‍👨🏽. Having respect for everyone, their skills and opinions is paramount.
 - Welcoming tone or politeness 😇: It is expected that you interact with others in an optimistic and cheerful manner.
-
 
 # Things to take care of while making a PR:
 
@@ -58,7 +56,6 @@ Team working with a lot of folks is very good for the growth 📈 of the project
 
 Check out the website: https://lovishprabhakar.is-a.dev/CS-Central/Code/index.html
 
-
 ## Tech stack
 
 ![HTML5](https://img.shields.io/badge/html-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -67,8 +64,8 @@ Check out the website: https://lovishprabhakar.is-a.dev/CS-Central/Code/index.ht
 ![JavaScript](https://img.shields.io/badge/JavaScirpt-305FCB?style=for-the-badge&logo=JavaScript&logoColor=white)
 ![Json](https://img.shields.io/badge/Json-305FCB?style=for-the-badge&logo=Json&logoColor=white)
 
-
 # Your First Contribution
+
 Is this your first time contributing to an open-source project? If yes, Welcome!!✨🎉💃🏾 Here is a [great tutorial](https://app.egghead.io/playlists/how-to-contribute-to-an-open-source-project-on-github) on how to contribute to an open source project.
 
 At this point, you are ready to take on the world of open-source contribution!!.
@@ -93,15 +90,14 @@ Any contributions you make are truly appreciated, go to our [CONTRIBUTING.md](ht
 
 View [CODE_OF_CONDUCT.md](https://github.com/lovishprabhakar/CSCentral-Hacktoberfest/blob/main/CODE_OF_CONDUCT.md)
 
-
 ## Thanks to all Contributors
 
 <a href="https://github.com/lovishprabhakar/CSCentral-Hacktoberfest/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=lovishprabhakar/CSCentral-Hacktoberfest" />
 </a>
 
-
 ## License
+
 ![License: Apache](https://img.shields.io/badge/license-Apache-blue)
 
 If you liked this project, please leave a 🌟

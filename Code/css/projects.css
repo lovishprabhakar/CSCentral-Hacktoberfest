@@ -1,6 +1,20 @@
 body {
   background-image: linear-gradient(90deg, #33b7e2, #5e62b0, #dc307c);
 }
+
+.back-button{
+  font-size: 18px;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+  background-color: #ef4591;
+}
+
+.back-button:hover{
+  background-color: #dc307c;
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;

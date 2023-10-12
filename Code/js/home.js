@@ -1,72 +1,71 @@
-const RANDOM_QUOTES_BASE_URL = new URL("https://api.quotable.io/random");
-var random_quote_text = document.querySelector("#random-quote");
-var random_quote_author = document.querySelector("#random-quote-author");
+const RANDOM_QUOTES_BASE_URL = new URL('https://api.quotable.io/random');
+var random_quote_text = document.querySelector('#random-quote');
+var random_quote_author = document.querySelector('#random-quote-author');
 
-var searchCard = document.querySelector("#searchCard");
+var searchCard = document.querySelector('#searchCard');
 
-var card_img1 = document.querySelector("#card-img1");
-var card_img2 = document.querySelector("#card-img2");
-var card_img3 = document.querySelector("#card-img3");
-var card_img4 = document.querySelector("#card-img4");
-var card_img5 = document.querySelector("#card-img5");
-var card_img6 = document.querySelector("#card-img6");
-var card_img7 = document.querySelector("#card-img7");
-var card_img8 = document.querySelector("#card-img8");
-var card_img9 = document.querySelector("#card-img9");
-var card_img10 = document.querySelector("#card-img10");
-var card_img11 = document.querySelector("#card-img11");
-var card_img12 = document.querySelector("#card-img12");
-var card_img13 = document.querySelector("#card-img13");
-var card_img14 = document.querySelector("#card-img14");
-var card_img15 = document.querySelector("#card-img15");
+var card_img1 = document.querySelector('#card-img1');
+var card_img2 = document.querySelector('#card-img2');
+var card_img3 = document.querySelector('#card-img3');
+var card_img4 = document.querySelector('#card-img4');
+var card_img5 = document.querySelector('#card-img5');
+var card_img6 = document.querySelector('#card-img6');
+var card_img7 = document.querySelector('#card-img7');
+var card_img8 = document.querySelector('#card-img8');
+var card_img9 = document.querySelector('#card-img9');
+var card_img10 = document.querySelector('#card-img10');
+var card_img11 = document.querySelector('#card-img11');
+var card_img12 = document.querySelector('#card-img12');
+var card_img13 = document.querySelector('#card-img13');
+var card_img14 = document.querySelector('#card-img14');
+var card_img15 = document.querySelector('#card-img15');
 
+var cardRow = document.querySelectorAll('#mainRow');
+var headingTags = document.getElementsByTagName('h5');
 
-var cardRow = document.querySelectorAll("#mainRow");
-var headingTags = document.getElementsByTagName("h5");
-
-let searchBtn = document.querySelector("#search-btn");
-let searchBar = document.querySelector(".search-bar-container");
-let menu = document.querySelector("#menu-bar");
-let navbar = document.querySelector(".navbar");
+let searchBtn = document.querySelector('#search-btn');
+let searchBar = document.querySelector('.search-bar-container');
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
 
 function darkmode() {
   var element = document.body;
-  element.classList.toggle("dark-mode");
+  element.classList.toggle('dark-mode');
 }
 
-menu.addEventListener("click", () => {
-  menu.classList.toggle("fa-times");
-  navbar.classList.toggle("active");
+menu.addEventListener('click', () => {
+  menu.classList.toggle('fa-times');
+  navbar.classList.toggle('active');
 });
 
-searchBtn.addEventListener("click", () => {
-  searchBtn.classList.toggle("fa-times");
-  searchBar.classList.toggle("active");
+searchBtn.addEventListener('click', () => {
+  searchBtn.classList.toggle('fa-times');
+  searchBar.classList.toggle('active');
 });
 
 randomQuoteFunction();
-searchCard.addEventListener("keyup", searchCards);
+searchCard.addEventListener('keyup', searchCards);
 
 function searchCards() {
   var searchTxt = searchCard.value.toUpperCase();
   console.log(searchTxt);
   if (searchTxt.length > 0) {
     for (var i = 0; i < cardRow[0].childElementCount; i++) {
-      let match = cardRow[0].children[i].getElementsByTagName("h5")[0];
+      let match = cardRow[0].children[i].getElementsByTagName('h5')[0];
       console.log(match.textContent);
       if (match) {
         let textValue = match.textContent || match.innerHTML;
         if (textValue.toUpperCase().includes(searchTxt)) {
           // if (textValue.toUpperCase().indexOf(searchTxt) > -1) {
-          cardRow[0].children[i].style.display = "";
+          cardRow[0].children[i].style.display = '';
         } else {
-          cardRow[0].children[i].style.display = "none";
+          cardRow[0].children[i].style.display = 'none';
         }
       }
     }
   } else {
     for (var i = 0; i < cardRow[0].childElementCount; i++) {
-      cardRow[0].children[i].style.display = "";
+      cardRow[0].children[i].style.display = '';
     }
   }
 }
@@ -74,7 +73,7 @@ function searchCards() {
 async function randomQuoteFunction() {
   random_quote_text.innerHTML =
     "<i class='bi bi-arrow-clockwise'></i>Loading todays quotes...";
-  random_quote_author.innerHTML = "";
+  random_quote_author.innerHTML = '';
 
   try {
     const response = await fetch(RANDOM_QUOTES_BASE_URL);
@@ -99,64 +98,64 @@ async function randomQuoteFunction() {
 
 function render_card_images() {
   card_img1.setAttribute(
-    "src",
-    "https://source.unsplash.com/random/925X617/?currency"
+    'src',
+    'https://source.unsplash.com/random/925X617/?currency',
   );
   card_img2.setAttribute(
-    "src",
-    "https://source.unsplash.com/random/925X617/?postbox"
+    'src',
+    'https://source.unsplash.com/random/925X617/?postbox',
   );
   card_img3.setAttribute(
-    "src",
-    "https://source.unsplash.com/random/925X617/?news"
+    'src',
+    'https://source.unsplash.com/random/925X617/?news',
   );
   card_img4.setAttribute(
-    "src",
-    "https://source.unsplash.com/random/925X617/?weather"
+    'src',
+    'https://source.unsplash.com/random/925X617/?weather',
   );
   card_img5.setAttribute(
-    "src",
-    "https://source.unsplash.com/random/925X617/?coding"
+    'src',
+    'https://source.unsplash.com/random/925X617/?coding',
   );
   card_img6.setAttribute(
-    "src",
-    "https://source.unsplash.com/random/925X617/?language"
+    'src',
+    'https://source.unsplash.com/random/925X617/?language',
   );
   card_img7.setAttribute(
-    "src",
-    "https://source.unsplash.com/random/925X617/?QR"
+    'src',
+    'https://source.unsplash.com/random/925X617/?QR',
   );
   card_img8.setAttribute(
-    "src",
-    "https://source.unsplash.com/random/925X617/?dictionary"
+    'src',
+    'https://source.unsplash.com/random/925X617/?dictionary',
   );
   card_img9.setAttribute(
-    "src",
-    "https://source.unsplash.com/random/925X617/?note"
+    'src',
+    'https://source.unsplash.com/random/925X617/?note',
   );
   card_img10.setAttribute(
-    "src",
-    "https://source.unsplash.com/random/925X617/?encrypt"
+    'src',
+    'https://source.unsplash.com/random/925X617/?encrypt',
   );
   card_img11.setAttribute(
-    "src",
-    "https://source.unsplash.com/random/925X617/?colors"
+    'src',
+    'https://source.unsplash.com/random/925X617/?colors',
   );
   card_img12.setAttribute(
-    "src",
-    "https://source.unsplash.com/random/925X617/?jokes"
+    'src',
+    'https://source.unsplash.com/random/925X617/?jokes',
   );
   card_img13.setAttribute(
-    "src",
-    "https://source.unsplash.com/random/925X617/?programming"
+    'src',
+    'https://source.unsplash.com/random/925X617/?programming',
   );
   card_img14.setAttribute(
-    "src",
-    "https://source.unsplash.com/random/925X617/?decrypt"
+    'src',
+    'https://source.unsplash.com/random/925X617/?decrypt',
   );
   card_img15.setAttribute(
-    "src",
-    "https://source.unsplash.com/random/925X617/?coding"
+    'src',
+    'https://source.unsplash.com/random/925X617/?coding',
   );
 }
 
@@ -178,119 +177,119 @@ function renderCards() {
 }
 
 function card1Data() {
-  document.querySelector("#title1").innerHTML =
+  document.querySelector('#title1').innerHTML =
     "<i class='bi bi-currency-exchange'></i> CER - Currency Exchange Rate";
-  document.querySelector("#content1").textContent =
-    "Currency exchange rate calculator helps you conversion of all major world currencies by latest foreign exchange rates.";
+  document.querySelector('#content1').textContent =
+    'Currency exchange rate calculator helps you conversion of all major world currencies by latest foreign exchange rates.';
 }
 
 function card2Data() {
-  document.querySelector("#title2").innerHTML =
+  document.querySelector('#title2').innerHTML =
     "<i class='bi bi-mailbox2'></i> PIN - Post Index Number";
-  document.querySelector("#content2").textContent =
-    "PIN allows to get details of Post Office by searching Postal PIN Code or Post Office Branch Name of India.";
+  document.querySelector('#content2').textContent =
+    'PIN allows to get details of Post Office by searching Postal PIN Code or Post Office Branch Name of India.';
 }
 
 function card3Data() {
-  document.querySelector("#title3").innerHTML =
+  document.querySelector('#title3').innerHTML =
     "<i class='bi bi-newspaper'></i> MRI - Most Recent Info";
-  document.querySelector("#content3").textContent =
+  document.querySelector('#content3').textContent =
     "Check today's news brief on National, Politics, Sports, Business, Education, etc... Keep update yourself";
 }
 
 function card4Data() {
-  document.querySelector("#title4").innerHTML =
+  document.querySelector('#title4').innerHTML =
     "<i class='bi bi-cloud-lightning-rain-fill'></i> SWF - Subsequent Weather Forecast";
-  document.querySelector("#content4").textContent =
-    "This weather forecast establishes predictable meteorological conditions over a specific area where you are standing.";
+  document.querySelector('#content4').textContent =
+    'This weather forecast establishes predictable meteorological conditions over a specific area where you are standing.';
 }
 
 function card5Data() {
-  document.querySelector("#title5").innerHTML =
+  document.querySelector('#title5').innerHTML =
     "<i class='bi bi-code-square'></i> PYP - Prove Your Potential";
-  document.querySelector("#content5").textContent =
-    "Are you a programmer? To demonstrate your worth here, try to solve the problems in the timely coding contest.";
+  document.querySelector('#content5').textContent =
+    'Are you a programmer? To demonstrate your worth here, try to solve the problems in the timely coding contest.';
 }
 
 function card6Data() {
-  document.querySelector("#title6").innerHTML =
+  document.querySelector('#title6').innerHTML =
     "<i class='bi bi-code-translate'></i> CST - CS Central Translation";
-  document.querySelector("#content6").textContent =
-    "This tool will translate from the default language of English to any of the languages you specify.";
+  document.querySelector('#content6').textContent =
+    'This tool will translate from the default language of English to any of the languages you specify.';
 }
 
 function card7Data() {
-  document.querySelector("#title7").innerHTML =
+  document.querySelector('#title7').innerHTML =
     "<i class='bi bi-qr-code-scan'></i> QR - Your QR";
-  document.querySelector("#content7").textContent =
-    "Use this QR code to send your secret message. Are you concerned about your privacy? Go here";
+  document.querySelector('#content7').textContent =
+    'Use this QR code to send your secret message. Are you concerned about your privacy? Go here';
 }
 
 function card8Data() {
-  document.querySelector("#title8").innerHTML =
+  document.querySelector('#title8').innerHTML =
     "<i class='bi bi-journal-bookmark-fill'></i> CSD - CS Central Dictionary";
-  document.querySelector("#content8").textContent =
-    "This gathers information about a word and instructs when and where it should be used, as well as how to pronounce it. Expand your vocabulary.";
+  document.querySelector('#content8').textContent =
+    'This gathers information about a word and instructs when and where it should be used, as well as how to pronounce it. Expand your vocabulary.';
 }
 
 function card9Data() {
-  document.querySelector("#title9").innerHTML =
+  document.querySelector('#title9').innerHTML =
     "<i class='bi bi-card-text'> </i>Notefy - Notes taking app";
-  document.querySelector("#content9").textContent =
-    "A simple notes taking app to keep your notes organized. You can add, and delete your notes.";
+  document.querySelector('#content9').textContent =
+    'A simple notes taking app to keep your notes organized. You can add, and delete your notes.';
 }
 
 function card10Data() {
-  document.querySelector("#title10").innerHTML =
+  document.querySelector('#title10').innerHTML =
     "<i class='bi bi-shield-lock'></i> CCE - Caesar Cipher Encryption";
-  document.querySelector("#content10").textContent =
-    "This tool will encrypt your message using Caesar Cipher. It is based on the principle of shifting each letter of the message by a fixed number of positions.";
+  document.querySelector('#content10').textContent =
+    'This tool will encrypt your message using Caesar Cipher. It is based on the principle of shifting each letter of the message by a fixed number of positions.';
 }
 function card11Data() {
-  document.querySelector("#title11").innerHTML =
+  document.querySelector('#title11').innerHTML =
     "<i class='bi bi-shield-lock'></i> CPG - Color Palette Generator";
-  document.querySelector("#content11").textContent =
-    "Not sure what coloring scheme to use somewhere? Use this tool to generate a random color palette.";
+  document.querySelector('#content11').textContent =
+    'Not sure what coloring scheme to use somewhere? Use this tool to generate a random color palette.';
 }
 function card12Data() {
-  document.querySelector("#title12").innerHTML =
+  document.querySelector('#title12').innerHTML =
     "<i class='bi bi-card-text'></i> RJG - Random Joke Generator";
-  document.querySelector("#content12").textContent =
+  document.querySelector('#content12').textContent =
     "'Dad' Jokes are greater than 'Bad' Jokes. Use this tool to learn new jokes and share with your friends to have a great time.";
 }
 function card13Data() {
-  document.querySelector("#title13").innerHTML =
+  document.querySelector('#title13').innerHTML =
     "<i class='fa fa-cog'></i> CCR- Code Compile Run";
-  document.querySelector("#content13").textContent =
-    "Compile and Run your code! Supported languages are C, C++, Java, Python, PHP.";
+  document.querySelector('#content13').textContent =
+    'Compile and Run your code! Supported languages are C, C++, Java, Python, PHP.';
 }
 function card14Data() {
-  document.querySelector("#title14").innerHTML =
+  document.querySelector('#title14').innerHTML =
     "<i class='bi bi-shield-lock'></i> EAD - Encryption and Decryption";
-  document.querySelector("#content14").textContent =
-    "This tool helps you to encrypt and decrypt data to Base 64, to MD5 and from Base 64 respectively.";
+  document.querySelector('#content14').textContent =
+    'This tool helps you to encrypt and decrypt data to Base 64, to MD5 and from Base 64 respectively.';
 }
 function card15Data() {
-  document.querySelector("#title15").innerHTML =
+  document.querySelector('#title15').innerHTML =
     "<i class='bi bi-code'></i> PPH - Polyglot Project Hub";
-  document.querySelector("#content15").textContent =
-    "This tool helps you to encrypt and decrypt data to Base 64, to MD5 and from Base 64 respectively.";
+  document.querySelector('#content15').textContent =
+    'This tool helps you to encrypt and decrypt data to Base 64, to MD5 and from Base 64 respectively.';
 }
 
 //Go to top button
-let mybutton = document.getElementById("btn-go-top");
+let mybutton = document.getElementById('btn-go-top');
 
-const scrollGoToTop = ()=>{
+const scrollGoToTop = () => {
   if (window.scrollY > 1 || document.scrollTop > 1) {
-    mybutton.style.display = "block";
-  } 
-  else {
-    mybutton.style.display = "none";
+    mybutton.style.display = 'block';
+  } else {
+    mybutton.style.display = 'none';
   }
-}
+};
 
-
-window.onscroll = function(){scrollGoToTop()}
+window.onscroll = function () {
+  scrollGoToTop();
+};
 
 function topFunction() {
   document.body.scrollTop = 0;
@@ -298,9 +297,9 @@ function topFunction() {
 }
 
 // Preloader Code
-document.addEventListener("load", preLoader());
+document.addEventListener('load', preLoader());
 
 function preLoader() {
-  $("#preloader").delay(2000).fadeOut(1000);
-  $("body").removeClass("loading");
+  $('#preloader').delay(2000).fadeOut(1000);
+  $('body').removeClass('loading');
 }

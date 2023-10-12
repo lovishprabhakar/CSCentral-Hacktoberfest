@@ -1,0 +1,24 @@
+{
+    "name": "CSCentral",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "test": "npx playwright test",
+        "show-report": "npx playwright show-report",
+        "lint": "npx eslint . --ext .ts",
+        "prettier": "npx prettier --write ."
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.38.1",
+        "@types/node": "^20.8.4",
+        "@typescript-eslint/eslint-plugin": "^6.7.5",
+        "@typescript-eslint/parser": "^6.7.5",
+        "eslint": "^8.51.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-playwright": "^0.16.0",
+        "eslint-plugin-prettier": "^5.0.1",
+        "husky": "^8.0.3",
+        "prettier": "3.0.3",
+        "typescript": "^5.2.2"
+    }
+}

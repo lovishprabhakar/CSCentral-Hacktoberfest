@@ -19,6 +19,10 @@ body {
   height: 200px;
   width: 100px;
   overflow: auto;
+  text-align: center;
+}
+.dropdown-content::-webkit-scrollbar {
+  width: 0;
 }
 
 .card-img,
@@ -143,7 +147,7 @@ ul {
 
 .quick-link-footer a {
   text-decoration: none;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in-out;
 }
 .quick-link-footer .linkedin:hover {
   color: #0077b5;
@@ -190,8 +194,8 @@ ul {
 .fa-instagram:hover {
   color: rgb(194, 23, 180);
 }
-.fa-twitter:hover {
-  color: rgb(47, 196, 255);
+.fa-x-twitter:hover {
+  color: rgb(0, 0, 0);
 }
 .fa-youtube:hover {
   color: rgba(223, 16, 16, 0.904);

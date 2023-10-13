@@ -1,8 +1,4 @@
-<p align="center"><img width="60%" src="https://github.com/ossamamehmood/Hacktoberfest2023/raw/main/.github/logo.png"/></p>
-<br>
-<br>
-<h1 align="center">
- CS Central
+# CS Central
 </h1>
 
 <h2>
@@ -54,7 +50,7 @@ Team working with a lot of folks is very good for the growth 📈 of the project
 - Just make sure that you push only the files that you have worked on.
 - ## Demo
 
-Check out the website: https://lovishprabhakar.is-a.dev/CS-Central/Code/index.html
+Check out the [website](https://lovishprabhakar.is-a.dev/CSCentral-Hacktoberfest/).
 
 ## Tech stack
 

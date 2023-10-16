@@ -1,14 +1,13 @@
 import { Page } from '@playwright/test';
-
 export class BasePage {
-  url = '';
-  constructor(private page: Page) {}
+  url = '/CS-Central/Code/';
+  constructor(protected page: Page) {}
 
   async goto(): Promise<void> {
     await this.page.goto(this.url);
   }
 
-  async title(): Promise<void> {
-    await this.page.title();
+  async wait(time: number): Promise<void> {
+    await this.page.waitForTimeout(time);
   }
 }

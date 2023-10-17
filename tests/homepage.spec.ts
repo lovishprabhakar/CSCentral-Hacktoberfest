@@ -8,8 +8,8 @@ test.describe('Verify top-main menu buttons', () => {
   let homePage: HomePage;
 
   test.beforeEach(async ({ page }) => {
-    await homePage.goto();
     homePage = new HomePage(page);
+    await homePage.goto();
   });
 
   test('ccr navigates to code compile run page', async ({ page }) => {

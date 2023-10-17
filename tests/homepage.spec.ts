@@ -5,11 +5,14 @@ import { CurrencyExchangePage } from '../src/pages/cer-currency-exchange.page';
 import { PostalIndexNumberPage } from '../src/pages/pin-postal-index-number.page';
 
 test.describe('Verify top-main menu buttons', () => {
-  test('ccr navigates to code compile run page', async ({ page }) => {
-    // Arrange
-    const homePage = new HomePage(page);
-    await homePage.goto();
+  let homePage: HomePage;
 
+  test.beforeEach(async ({ page }) => {
+    await homePage.goto();
+    homePage = new HomePage(page);
+  });
+
+  test('ccr navigates to code compile run page', async ({ page }) => {
     // Act
     await homePage.topMenu.ccrButton.click();
     const ccrPage = new CodeCompileRunPage(page);
@@ -21,10 +24,6 @@ test.describe('Verify top-main menu buttons', () => {
   });
 
   test('cer navigates to currency exchange page', async ({ page }) => {
-    // Arrange
-    const homePage = new HomePage(page);
-    await homePage.goto();
-
     // Act
     await homePage.topMenu.cerButton.click();
     const cerPage = new CurrencyExchangePage(page);
@@ -36,10 +35,6 @@ test.describe('Verify top-main menu buttons', () => {
   });
 
   test('pin navigates to postal index number page', async ({ page }) => {
-    // Arrange
-    const homePage = new HomePage(page);
-    await homePage.goto();
-
     // Act
     await homePage.topMenu.pinButton.click();
     const pinPage = new PostalIndexNumberPage(page);

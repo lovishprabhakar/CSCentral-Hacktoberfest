@@ -5,9 +5,7 @@ export class TopMenuComponent {
   cerButton = this.page.getByRole('link', { name: 'CER', exact: true });
   pinButton = this.page.getByRole('link', { name: 'PIN', exact: true });
   moreButton = this.page.getByRole('link', { name: 'More' });
-
-  homePage = this.page.getByRole('link', { name: ' CS Central' });
-  homePageLogo = this.page.getByRole('link', { name: 'Logo CS Central' });
+  homePageLogo = this.page.locator('.navbar-brand');
 
   constructor(private page: Page) {}
 }

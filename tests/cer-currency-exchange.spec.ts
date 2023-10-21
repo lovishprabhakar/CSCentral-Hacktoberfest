@@ -39,7 +39,9 @@ test.describe('Verify basic features on CER - Currency Exchange Rate page', () =
   test('successful currency conversion of defined number of units', async () => {
     // Arrange
     const expectedTitle = 'Convert with your quantities';
-    // the below 3 steps will be done by API request in upcoming PR
+
+    /* since we're testing API service: https://github.com/fawazahmed0/currency-api, more checks - API tests will be additionally added in next issue is raised
+    and the below 3 steps will be replaced by API requests to speed up the test execution */
     await cerPage.convertFromCurrency.selectOption('usd');
     await cerPage.convertToCurrency.selectOption('pln');
     await cerPage.convertButton.click();

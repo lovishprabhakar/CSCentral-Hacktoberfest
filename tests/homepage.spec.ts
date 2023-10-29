@@ -16,7 +16,7 @@ test.describe('Verify top-main menu navigates to expected pages', () => {
     // Act
     await homePage.topMenu.ccrButton.click();
     const ccrPage = new CodeCompileRunPage(page);
-    await ccrPage.wait(8_000);
+    await ccrPage.waitForPageToLoadURL();
 
     // Assert
     expect(await page.textContent('h1')).toBe('CS Central');
@@ -27,7 +27,7 @@ test.describe('Verify top-main menu navigates to expected pages', () => {
     // Act
     await homePage.topMenu.cerButton.click();
     const cerPage = new CurrencyExchangePage(page);
-    await cerPage.wait(8_000);
+    await cerPage.waitForPageToLoadURL();
 
     // Assert
     expect(await page.textContent('h1')).toBe('CS Central');
@@ -38,7 +38,7 @@ test.describe('Verify top-main menu navigates to expected pages', () => {
     // Act
     await homePage.topMenu.pinButton.click();
     const pinPage = new PostalIndexNumberPage(page);
-    await pinPage.wait(8_000);
+    await pinPage.waitForPageToLoadURL();
 
     // Assert
     expect(await page.textContent('h1')).toBe('CS Central');

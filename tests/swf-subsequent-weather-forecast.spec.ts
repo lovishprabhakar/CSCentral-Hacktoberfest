@@ -30,7 +30,7 @@ test.describe('Check weather forecast on SWF - Subsequent Weather Forecast page'
     await swfPage.searchPlacesButton.click();
     await swfPage.cityInput.fill('Warsaw, Poland');
     await swfPage.cityInput.press('Enter');
-    await swfPage.waitForLoadState();
+    await page.waitForLoadState();
 
     // Assert
     expect(page.url()).toBe(expectedWeatherURL);

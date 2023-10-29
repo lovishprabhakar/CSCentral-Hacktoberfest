@@ -9,4 +9,10 @@ export class CodeCompileRunPage extends BasePage {
   constructor(page: Page) {
     super(page);
   }
+
+  placeholder = this.page
+    .frameLocator('iframe[title="ide"]')
+    .frameLocator('iframe')
+    .locator('#code div')
+    .filter();
 }

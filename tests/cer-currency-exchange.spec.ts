@@ -25,9 +25,7 @@ test.describe('Verify basic features on CER - Currency Exchange Rate page', () =
     const expectedSuccessMessage = 'Converted Successfully!';
 
     // Act
-    await cerPage.convertFromCurrency.selectOption('usd');
-    await cerPage.convertToCurrency.selectOption('pln');
-    await cerPage.convertButton.click();
+    await cerPage.performCurrencyConversionWith1To1Unit('usd', 'pln');
 
     // Assert
     await expect(cerPage.conversionResultMessage).toHaveText(
@@ -39,16 +37,12 @@ test.describe('Verify basic features on CER - Currency Exchange Rate page', () =
     // Arrange
     const expectedTitle = 'Convert with your quantities';
 
-    /* since we're testing API service: https://github.com/fawazahmed0/currency-api, more checks - API tests will be additionally added in next issue is raised
-    and the below 3 steps will be replaced by API requests to speed up the test execution */
-    await cerPage.convertFromCurrency.selectOption('usd');
-    await cerPage.convertToCurrency.selectOption('pln');
-    await cerPage.convertButton.click();
+    /* since we're testing API service: https://github.com/fawazahmed0/currency-api, the below method can be replaced by API request to speed up the test execution */
+    await cerPage.performCurrencyConversionWith1To1Unit('usd', 'pln');
 
     // Act
     await cerPage.moreCalculationsButton.click();
-    await cerPage.addUnit('2');
-    await cerPage.moreUnitsConvertButton.click();
+    await cerPage.performCurrencyConversionWithXtoXunit('2');
 
     // Assert
     await expect(cerPage.moreCalculationsExchangeResult).not.toBeEmpty();

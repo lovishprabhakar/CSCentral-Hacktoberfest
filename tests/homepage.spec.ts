@@ -59,6 +59,7 @@ test.describe('Verify headers in footer', () => {
     const headerInFooter = page.locator('h6');
     const firstHeader = headerInFooter.first();
     const lastHeader = headerInFooter.last();
+
     // Assert
     await expect.soft(firstHeader).toHaveText('About Us');
     await expect(lastHeader).toHaveText(' Contact Me');

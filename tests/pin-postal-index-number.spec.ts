@@ -31,6 +31,7 @@ test.describe('Verify basic features on PIN - Postal Index Number page', () => {
     // Arrange
     searchType = 'Post office';
     noOfMatchesFound = '2';
+
     // Act
     await pinPage.postalInput.fill('New Delhi');
     await pinPage.searchBy.selectOption('branch');
@@ -45,6 +46,7 @@ test.describe('Verify basic features on PIN - Postal Index Number page', () => {
     // Arrange
     searchType = 'Post office';
     noOfMatchesFound = '1';
+
     // Act
     await pinPage.searchBy.selectOption('branch');
     await pinPage.postalInput.fill('New Delhi South');
@@ -59,6 +61,7 @@ test.describe('Verify basic features on PIN - Postal Index Number page', () => {
     // Arrange
     searchType = 'pincode';
     noOfMatchesFound = '6';
+
     // Act
     await pinPage.searchBy.selectOption('pin');
     await pinPage.postalInput.fill('110049');
@@ -74,6 +77,7 @@ test.describe('Verify basic features on PIN - Postal Index Number page', () => {
     await pinPage.searchBy.selectOption('pin');
     await pinPage.postalInput.fill('New Delhi');
     await pinPage.searchPostOfficeButton.click();
+
     // Assert
     await expect(pinPage.noResultsFound).toHaveText(
       expectedPinCodeErrorMessage,
@@ -85,6 +89,7 @@ test.describe('Verify basic features on PIN - Postal Index Number page', () => {
     await pinPage.searchBy.selectOption('branch');
     await pinPage.postalInput.fill('110049');
     await pinPage.searchPostOfficeButton.click();
+
     // Assert
     await expect(pinPage.noResultsFound).toHaveText(
       expectedPostOfficeBranchErrorMessage,

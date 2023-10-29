@@ -1,8 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { SubsequentWeatherForecastPage } from '../src/pages/swf-subsequent-weather-forecast.page';
+import { HomePage } from '../src/pages/home.page';
 
 test.describe('Check weather forecast on SWF - Subsequent Weather Forecast page', () => {
   let swfPage: SubsequentWeatherForecastPage;
+  let homePage: HomePage;
 
   test.beforeEach(async ({ page }) => {
     swfPage = new SubsequentWeatherForecastPage(page);
@@ -10,15 +12,12 @@ test.describe('Check weather forecast on SWF - Subsequent Weather Forecast page'
   });
 
   test('main-logo navigates to homepage', async ({ page }) => {
-    // Arrange
-    const expectedHomepageURL =
-      'https://lovishprabhakar.is-a.dev/CS-Central/Code/index.html';
-
     // Act
     await swfPage.topMenu.homePageLogo.click();
 
     // Assert
-    expect(page.url()).toBe(expectedHomepageURL);
+    homePage = new HomePage(page);
+    expect(page.url()).toBe(homePage.url);
   });
 
   test('check current weather in city', async ({ page }) => {

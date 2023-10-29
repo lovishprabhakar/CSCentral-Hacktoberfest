@@ -1,8 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { CurrencyExchangePage } from '../src/pages/cer-currency-exchange.page';
+import { HomePage } from '../src/pages/home.page';
 
 test.describe('Verify basic features on CER - Currency Exchange Rate page', () => {
   let cerPage: CurrencyExchangePage;
+  let homePage: HomePage;
 
   test.beforeEach(async ({ page }) => {
     cerPage = new CurrencyExchangePage(page);
@@ -10,15 +12,12 @@ test.describe('Verify basic features on CER - Currency Exchange Rate page', () =
   });
 
   test('main-logo navigates to homepage', async ({ page }) => {
-    // Arrange
-    const expectedHomepageURL =
-      'https://lovishprabhakar.is-a.dev/CS-Central/Code/index.html';
-
     // Act
     await cerPage.topMenu.homePageLogo.click();
 
     // Assert
-    expect(page.url()).toBe(expectedHomepageURL);
+    homePage = new HomePage(page);
+    expect(page.url()).toBe(homePage.url);
   });
 
   test('successful currency conversion of 1 unit to 1 unit', async () => {

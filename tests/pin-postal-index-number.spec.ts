@@ -1,8 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { PostalIndexNumberPage } from '../src/pages/pin-postal-index-number.page';
+import { HomePage } from '../src/pages/home.page';
 
 test.describe('Verify basic features on PIN - Postal Index Number page', () => {
   let pinPage: PostalIndexNumberPage;
+  let homePage: HomePage;
   let noOfMatchesFound = '';
   let searchType = '';
   const expectedPinCodeErrorMessage = 'The requested resource is not found.';
@@ -14,15 +16,12 @@ test.describe('Verify basic features on PIN - Postal Index Number page', () => {
   });
 
   test('main-logo navigates to homepage', async ({ page }) => {
-    // Arrange
-    const expectedHomepageURL =
-      'https://lovishprabhakar.is-a.dev/CS-Central/Code/index.html';
-
     // Act
     await pinPage.topMenu.homePageLogo.click();
 
     // Assert
-    expect(page.url()).toBe(expectedHomepageURL);
+    homePage = new HomePage(page);
+    expect(page.url()).toBe(homePage.url);
   });
 
   /* since we're testing API service: http://www.postalpincode.in/Api-Details, 

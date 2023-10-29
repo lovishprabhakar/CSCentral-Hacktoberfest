@@ -5,6 +5,7 @@ import { FooterComponent } from '../components/footer.component';
 import { CodeCompileRunPage } from '../pages/ccr-code-compile-run.page';
 import { CurrencyExchangePage } from '../pages/cer-currency-exchange.page';
 import { PostalIndexNumberPage } from '../pages/pin-postal-index-number.page';
+import playwrightConfig from '../../playwright.config';
 
 export class HomePage extends BasePage {
   topMenu = new TopMenuComponent(this.page);
@@ -13,6 +14,7 @@ export class HomePage extends BasePage {
   cerPage = new CurrencyExchangePage(this.page);
   pinPage = new PostalIndexNumberPage(this.page);
   url = '/CS-Central/Code/index.html';
+  baseURL = playwrightConfig.use?.baseURL;
 
   constructor(page: Page) {
     super(page);

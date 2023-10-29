@@ -8,6 +8,7 @@ test.describe('Check weather forecast on SWF - Subsequent Weather Forecast page'
 
   test.beforeEach(async ({ page }) => {
     swfPage = new SubsequentWeatherForecastPage(page);
+    homePage = new HomePage(page);
     await swfPage.goto();
   });
 
@@ -16,15 +17,10 @@ test.describe('Check weather forecast on SWF - Subsequent Weather Forecast page'
     await swfPage.topMenu.homePageLogo.click();
 
     // Assert
-    homePage = new HomePage(page);
-    expect(page.url()).toBe(homePage.url);
+    expect(page.url()).toBe(`${homePage.baseURL}${homePage.url}`);
   });
 
   test('check current weather in city', async ({ page }) => {
-    // Arrange
-    const expectedWeatherURL =
-      'https://lovishprabhakar.is-a.dev/CS-Central/Code/currentweather.html';
-
     // Act
     await swfPage.searchPlacesButton.click();
     await swfPage.cityInput.fill('Warsaw, Poland');
@@ -32,7 +28,7 @@ test.describe('Check weather forecast on SWF - Subsequent Weather Forecast page'
     await page.waitForLoadState();
 
     // Assert
-    expect(page.url()).toBe(expectedWeatherURL);
+    expect(page.url()).toBe(`${homePage.baseURL}${swfPage.targetUrl}`);
     expect(swfPage.foundLocationDetails).toHaveText('Warsaw, PL');
     expect(swfPage.foundWeatherDetails).toContainText('°C');
   });

@@ -23,9 +23,7 @@ test.describe('Check weather forecast on SWF - Subsequent Weather Forecast page'
   test('check current weather in city', async ({ page }) => {
     // Act
     await swfPage.searchPlacesButton.click();
-    await swfPage.cityInput.fill('Warsaw, Poland');
-    await swfPage.cityInput.press('Enter');
-    await page.waitForLoadState();
+    await swfPage.searchForWeatherInLocation('Warsaw, Poland');
 
     // Assert
     expect(page.url()).toBe(`${homePage.baseURL}${swfPage.targetUrl}`);

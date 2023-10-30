@@ -1,8 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { PostalIndexNumberPage } from '../src/pages/pin-postal-index-number.page';
+import { HomePage } from '../src/pages/home.page';
 
 test.describe('Verify basic features on PIN - Postal Index Number page', () => {
   let pinPage: PostalIndexNumberPage;
+  let homePage: HomePage;
   let noOfMatchesFound = '';
   let searchType = '';
   const expectedPinCodeErrorMessage = 'The requested resource is not found.';
@@ -14,15 +16,12 @@ test.describe('Verify basic features on PIN - Postal Index Number page', () => {
   });
 
   test('main-logo navigates to homepage', async ({ page }) => {
-    // Arrange
-    const expectedHomepageURL =
-      'https://lovishprabhakar.is-a.dev/CS-Central/Code/index.html';
-
     // Act
     await pinPage.topMenu.homePageLogo.click();
 
     // Assert
-    expect(page.url()).toBe(expectedHomepageURL);
+    homePage = new HomePage(page);
+    expect(page.url()).toBe(`${homePage.baseURL}${homePage.url}`);
   });
 
   /* since we're testing API service: http://www.postalpincode.in/Api-Details, 
@@ -31,6 +30,7 @@ test.describe('Verify basic features on PIN - Postal Index Number page', () => {
     // Arrange
     searchType = 'Post office';
     noOfMatchesFound = '2';
+
     // Act
     await pinPage.postalInput.fill('New Delhi');
     await pinPage.searchBy.selectOption('branch');
@@ -45,6 +45,7 @@ test.describe('Verify basic features on PIN - Postal Index Number page', () => {
     // Arrange
     searchType = 'Post office';
     noOfMatchesFound = '1';
+
     // Act
     await pinPage.searchBy.selectOption('branch');
     await pinPage.postalInput.fill('New Delhi South');
@@ -59,6 +60,7 @@ test.describe('Verify basic features on PIN - Postal Index Number page', () => {
     // Arrange
     searchType = 'pincode';
     noOfMatchesFound = '6';
+
     // Act
     await pinPage.searchBy.selectOption('pin');
     await pinPage.postalInput.fill('110049');
@@ -74,6 +76,7 @@ test.describe('Verify basic features on PIN - Postal Index Number page', () => {
     await pinPage.searchBy.selectOption('pin');
     await pinPage.postalInput.fill('New Delhi');
     await pinPage.searchPostOfficeButton.click();
+
     // Assert
     await expect(pinPage.noResultsFound).toHaveText(
       expectedPinCodeErrorMessage,
@@ -85,6 +88,7 @@ test.describe('Verify basic features on PIN - Postal Index Number page', () => {
     await pinPage.searchBy.selectOption('branch');
     await pinPage.postalInput.fill('110049');
     await pinPage.searchPostOfficeButton.click();
+
     // Assert
     await expect(pinPage.noResultsFound).toHaveText(
       expectedPostOfficeBranchErrorMessage,

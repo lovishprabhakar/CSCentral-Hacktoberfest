@@ -9,7 +9,7 @@ export class BasePage {
     await this.page.goto(this.url);
   }
 
-  async wait(time: number): Promise<void> {
-    await this.page.waitForTimeout(time);
+  async waitForPageToLoadURL(): Promise<void> {
+    await this.page.waitForURL(this.url);
   }
 }

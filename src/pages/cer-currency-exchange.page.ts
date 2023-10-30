@@ -23,7 +23,17 @@ export class CurrencyExchangePage extends BasePage {
   moreUnitsConvertButton = this.page.locator('#more-currency-convertor-btn');
   moreCalculationsExchangeResult = this.page.locator('#more-input-1');
 
-  async addUnit(unit: string): Promise<void> {
+  async performCurrencyConversionWithXtoXunit(unit: string): Promise<void> {
     await this.moreCalculationsUnitsInput.fill(unit);
+    await this.moreUnitsConvertButton.click();
+  }
+
+  async performCurrencyConversionWith1To1Unit(
+    fromCurrency: string,
+    toCurrency: string,
+  ): Promise<void> {
+    await this.convertFromCurrency.selectOption(fromCurrency);
+    await this.convertToCurrency.selectOption(toCurrency);
+    await this.convertButton.click();
   }
 }

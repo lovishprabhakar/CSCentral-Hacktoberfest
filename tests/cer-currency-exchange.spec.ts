@@ -1,8 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { CurrencyExchangePage } from '../src/pages/cer-currency-exchange.page';
+import { HomePage } from '../src/pages/home.page';
 
 test.describe('Verify basic features on CER - Currency Exchange Rate page', () => {
   let cerPage: CurrencyExchangePage;
+  let homePage: HomePage;
 
   test.beforeEach(async ({ page }) => {
     cerPage = new CurrencyExchangePage(page);
@@ -10,15 +12,12 @@ test.describe('Verify basic features on CER - Currency Exchange Rate page', () =
   });
 
   test('main-logo navigates to homepage', async ({ page }) => {
-    // Arrange
-    const expectedHomepageURL =
-      'https://lovishprabhakar.is-a.dev/CS-Central/Code/index.html';
-
     // Act
     await cerPage.topMenu.homePageLogo.click();
 
     // Assert
-    expect(page.url()).toBe(expectedHomepageURL);
+    homePage = new HomePage(page);
+    expect(page.url()).toBe(`${homePage.baseURL}${homePage.url}`);
   });
 
   test('successful currency conversion of 1 unit to 1 unit', async () => {
@@ -26,9 +25,7 @@ test.describe('Verify basic features on CER - Currency Exchange Rate page', () =
     const expectedSuccessMessage = 'Converted Successfully!';
 
     // Act
-    await cerPage.convertFromCurrency.selectOption('usd');
-    await cerPage.convertToCurrency.selectOption('pln');
-    await cerPage.convertButton.click();
+    await cerPage.performCurrencyConversionWith1To1Unit('usd', 'pln');
 
     // Assert
     await expect(cerPage.conversionResultMessage).toHaveText(
@@ -40,16 +37,12 @@ test.describe('Verify basic features on CER - Currency Exchange Rate page', () =
     // Arrange
     const expectedTitle = 'Convert with your quantities';
 
-    /* since we're testing API service: https://github.com/fawazahmed0/currency-api, more checks - API tests will be additionally added in next issue is raised
-    and the below 3 steps will be replaced by API requests to speed up the test execution */
-    await cerPage.convertFromCurrency.selectOption('usd');
-    await cerPage.convertToCurrency.selectOption('pln');
-    await cerPage.convertButton.click();
+    /* since we're testing API service: https://github.com/fawazahmed0/currency-api, the below method can be replaced by API request to speed up the test execution */
+    await cerPage.performCurrencyConversionWith1To1Unit('usd', 'pln');
 
     // Act
     await cerPage.moreCalculationsButton.click();
-    await cerPage.addUnit('2');
-    await cerPage.moreUnitsConvertButton.click();
+    await cerPage.performCurrencyConversionWithXtoXunit('2');
 
     // Assert
     await expect(cerPage.moreCalculationsExchangeResult).not.toBeEmpty();

@@ -1,11 +1,12 @@
 {
-    "name": "CSCentral",
+    "name": "CS Central UI Tests",
     "version": "1.0.0",
-    "description": "",
+    "description": "Automation UI Tests with Playwright and TypeScript",
     "scripts": {
         "test": "npx playwright test",
         "show-report": "npx playwright show-report",
-        "lint": "npx eslint . --ext .ts",
+        "test-lint": "npx eslint . --ext .ts",
+        "lint": "npx eslint .",
         "prettier": "npx prettier --write ."
     },
     "devDependencies": {

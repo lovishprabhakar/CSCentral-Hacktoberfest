@@ -3,7 +3,7 @@ var generate_qr = document.querySelector('#generate_qr');
 var result = document.querySelector('#result');
 var downloadBtn = document.querySelector('#downloadBtn');
 var size = document.getElementById('size');
-var qr_img = document.querySelector("#qr_img"); 
+var qr_img = document.querySelector('#qr_img');
 var color = document.getElementById('color');
 
 generate_qr.addEventListener('click', newQRFun);
@@ -28,7 +28,6 @@ size.addEventListener('change', (e) => {
   isEmpty();
 });
 
-
 let colors = color.value;
 color.addEventListener('change', (e) => {
   colors = e.target.value;
@@ -42,33 +41,32 @@ function generate(user_input) {
   result.style = '';
 
   var qrcode = new QRious({
-    element: document.querySelector("#result"),
+    element: document.querySelector('#result'),
     size: sizes,
     value: `${user_input.value}`,
-    
-      // background: "#123456",
-      // backgroundAlpha: 0.7,
-      foreground: colors,
-      foregroundAlpha: 1, 
-      // padding: 20, 
-      // level: "H",
-    
+
+    // background: "#123456",
+    // backgroundAlpha: 0.7,
+    foreground: colors,
+    foregroundAlpha: 1,
+    // padding: 20,
+    // level: "H",
   });
 
   var qrcodeURL = qrcode.toDataURL();
-  if(qrcode) {
-   // console.log((qrcodeURL))
-    var image = document.createElement("img");
-    image.id = "id";
-    image.className = "class";
-    image.src = qrcodeURL;            // image.src = "IMAGE URL/PATH"
+  if (qrcode) {
+    // console.log((qrcodeURL))
+    var image = document.createElement('img');
+    image.id = 'id';
+    image.className = 'class';
+    image.src = qrcodeURL; // image.src = "IMAGE URL/PATH"
     result.appendChild(image);
   }
 
   let download_link = document.createElement('a');
   download_link.setAttribute('download', 'qr_code.png');
   download_link.setAttribute('class', 'btn btn-danger text-center');
-  download_link.setAttribute("href", qrcodeURL)
+  download_link.setAttribute('href', qrcodeURL);
   download_link.innerText = 'Download';
 
   downloadBtn.appendChild(download_link);

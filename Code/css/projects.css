@@ -2,7 +2,7 @@ body {
   background-image: linear-gradient(90deg, #33b7e2, #5e62b0, #dc307c);
 }
 
-.back-button{
+.back-button {
   font-size: 18px;
   border: none;
   padding: 4px 8px;
@@ -11,7 +11,7 @@ body {
   background-color: #ef4591;
 }
 
-.back-button:hover{
+.back-button:hover {
   background-color: #dc307c;
 }
 

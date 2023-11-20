@@ -34,6 +34,7 @@ function displayMoreResults() {
     var successHTML = `<h2 class="alert-heading text-success badge rounded-pill bg-dark">Converted Successfully!</h2>`;
     document.querySelector('#more-success-msg').innerHTML = successHTML;
   } else {
+    moreConvertorBtn.innerHTML = `Convert`;
     alert('Invalid Input');
     return;
   }

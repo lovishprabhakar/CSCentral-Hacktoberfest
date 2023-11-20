@@ -1,4 +1,5 @@
 # CS Central
+
 </h1>
 
 <h2>
@@ -59,6 +60,39 @@ Check out the [website](https://lovishprabhakar.is-a.dev/CSCentral-Hacktoberfest
 ![SCSS](https://img.shields.io/badge/scss-%231572B6.svg?style=for-the-badge&logo=scss3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScirpt-305FCB?style=for-the-badge&logo=JavaScript&logoColor=white)
 ![Json](https://img.shields.io/badge/Json-305FCB?style=for-the-badge&logo=Json&logoColor=white)
+
+## Testing Tech stack
+
+![Playwright](https://img.shields.io/badge/Playwright-305FCB?style=for-the-badge&logo=Playwright&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScirpt-305FCB?style=for-the-badge&logo=TypeScript&logoColor=white)
+
+## Installation and setup
+
+### Prerequisites
+
+- GIT installed → https://git-scm.com/downloads
+- Node.js installed → https://nodejs.org/en/download
+- (optional, for testing reasons) VS Code IDE installed → https://code.visualstudio.com/
+- (optional, for testing reasons) VS Code recommended Playwright plugin installed → [Playwright Test for VSCode](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)
+
+### Repository setup
+
+1. to start contributing - install dependencies (such as tools for static code analysis):
+   ```
+   npm install
+   ```
+
+### Test solution setup
+
+1. to start contributing to tests - install Playwright with Chromium browser:
+   ```
+   npx playwright install chromium
+   ```
+
+### Running Tests
+
+- to run all tests: `npx playwright test`
+- to run a specific test: `npx playwright test {testfilename.ts}`
 
 # Your First Contribution
 

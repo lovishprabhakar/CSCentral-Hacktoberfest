@@ -31,9 +31,12 @@ function displayMoreResults() {
   if (parseInt(more_input_1.value)) {
     var res = result_value * more_input_1.value;
     document.querySelector('#more-input-2').value = res;
+    var successHTML = `<h2 class="alert-heading text-success badge rounded-pill bg-dark">Converted Successfully!</h2>`;
+    document.querySelector('#more-success-msg').innerHTML = successHTML;
   } else {
     moreConvertorBtn.innerHTML = `Convert`;
-    alert('Invalid Input');
+    var errorHTML = `<h2 class="alert-heading text-error badge rounded-pill bg-dark"><font color="red">Invalid input</font></h2>`;
+    document.querySelector('#more-success-msg').innerHTML = errorHTML;
     return;
   }
   moreConvertorBtn.innerHTML = `Convert`;

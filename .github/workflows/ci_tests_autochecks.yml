@@ -2,6 +2,8 @@ name: Run Playwright auto-checks
 on:
   push:
     branches: ['main']
+    paths-ignore:
+      - '**/*.md'
 jobs:
   playwright-api-auto-checks:
     runs-on: ubuntu-latest
@@ -11,13 +13,10 @@ jobs:
       - name: Install node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
-      - name: Install http-server for running app locally
+          node-version: 18 
+      - name: Run local server in Docker
         run: |
-          npm install -g http-server
-      - name: Run http-server
-        run: |
-          http-server . -p 8080
+          docker run -d --name cscentral -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
       - name: Change env variable from prod to local
         run: |
           echo "ci=true" >> .env

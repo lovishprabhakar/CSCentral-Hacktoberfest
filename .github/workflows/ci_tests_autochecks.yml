@@ -1,4 +1,4 @@
-name: Run Playwright API Auto-Checks on CI
+name: Run Playwright auto-checks
 on:
   push:
     branches: ['main']

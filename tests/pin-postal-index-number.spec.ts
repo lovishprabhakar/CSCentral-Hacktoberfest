@@ -21,7 +21,9 @@ test.describe('Verify basic features on PIN - Postal Index Number page', () => {
 
     // Assert
     homePage = new HomePage(page);
-    process.env.local ? expect(page.url()).toBe(`${homePage.baseURL}${homePage.localUrl}`) : expect(page.url()).toBe(`${homePage.baseURL}${homePage.url}`);
+    process.env.local
+      ? expect(page.url()).toBe(`${homePage.baseURL}${homePage.localUrl}`)
+      : expect(page.url()).toBe(`${homePage.baseURL}${homePage.url}`);
   });
 
   /* since we're testing API service: http://www.postalpincode.in/Api-Details, 

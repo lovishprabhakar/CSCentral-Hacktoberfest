@@ -18,7 +18,9 @@ test.describe('Verify basic features on CCR - Code Compile Run page', () => {
     await ccrPage.topMenu.homePageLogo.click();
 
     // Assert
-    process.env.local ? expect(page.url()).toBe(`${homePage.baseURL}${homePage.localUrl}`) : expect(page.url()).toBe(`${homePage.baseURL}${homePage.url}`);
+    process.env.local
+      ? expect(page.url()).toBe(`${homePage.baseURL}${homePage.localUrl}`)
+      : expect(page.url()).toBe(`${homePage.baseURL}${homePage.url}`);
   });
 
   test.fixme('ccr page is displayed with input field', async () => {

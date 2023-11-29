@@ -17,7 +17,9 @@ test.describe('Verify basic features on CER - Currency Exchange Rate page', () =
 
     // Assert
     homePage = new HomePage(page);
-    process.env.local ? expect(page.url()).toBe(`${homePage.baseURL}${homePage.localUrl}`) : expect(page.url()).toBe(`${homePage.baseURL}${homePage.url}`);
+    process.env.local
+      ? expect(page.url()).toBe(`${homePage.baseURL}${homePage.localUrl}`)
+      : expect(page.url()).toBe(`${homePage.baseURL}${homePage.url}`);
   });
 
   test('successful currency conversion of 1 unit to 1 unit', async () => {

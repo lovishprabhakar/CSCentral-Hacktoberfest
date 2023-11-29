@@ -14,12 +14,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18 
+      - name: Docker image pull
+        run: | 
+          docker pull httpd
       - name: Build Docker image
         run: | 
          docker build -t cscentral .
       - name: Run http-server in Docker
         run: |
-          docker run --name my-nginx-server -p 127.0.0.1:8080:8080 cscentral -d
+          docker run -d --name cscentral -p 127.0.0.1:8080:80 my-apache2
       - name: Change env variable from prod to local
         run: |
           echo "ci=true" >> .env

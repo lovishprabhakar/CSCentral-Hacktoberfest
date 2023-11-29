@@ -12,7 +12,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: [
     ['html', { outputFile: './playwright-report.html' }],
-    ['json', { outputFile: './playwright-report.json' }]
+    ['json', { outputFile: './playwright-report.json' }],
   ],
   use: {
     baseURL: 'https://lovishprabhakar.is-a.dev',
@@ -25,6 +25,6 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
-    }
-  ]
+    },
+  ],
 });

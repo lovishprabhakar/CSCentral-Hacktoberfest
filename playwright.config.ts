@@ -1,13 +1,14 @@
 import { defineConfig, devices } from '@playwright/test';
 
 require('dotenv').config();
-const isLocal = process.env.local === 'true';
+const isLocal = process.env.local;
 const setBaseURL = isLocal
   ? process.env.LOCAL_BASE_URL
   : process.env.PROD_BASE_URL;
 
 export default defineConfig({
   testDir: './tests',
+  globalSetup: './src/global-setup.ts',
   timeout: 30 * 1000,
   expect: {
     timeout: 8000,

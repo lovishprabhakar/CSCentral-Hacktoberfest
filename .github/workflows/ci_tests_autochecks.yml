@@ -22,7 +22,7 @@ jobs:
          docker build -t cscentral .
       - name: Run http-server in Docker
         run: |
-          docker run -d --name cscentral -p 127.0.0.1:8080:8080 my-apache2
+          docker run --name cscentral -p 127.0.0.1:8080:8080 my-apache2 -d
       - name: Change env variable from prod to local
         run: |
           echo "ci=true" >> .env

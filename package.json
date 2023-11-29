@@ -7,7 +7,8 @@
         "show-report": "npx playwright show-report",
         "test-lint": "npx eslint . --ext .ts",
         "lint": "npx eslint .",
-        "prettier": "npx prettier --write ."
+        "prettier": "npx prettier --write .",
+        "apprun": "http-server"
     },
     "devDependencies": {
         "@playwright/test": "^1.38.1",
@@ -21,5 +22,8 @@
         "husky": "^8.0.3",
         "prettier": "3.0.3",
         "typescript": "^5.2.2"
+    },
+    "dependencies": {
+        "http-simple-proxy": "^1.0.5"
     }
 }

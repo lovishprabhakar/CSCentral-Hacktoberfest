@@ -12,8 +12,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: [
     ['html', { outputFile: './playwright-report.html' }],
-    ['json', { outputFile: './playwright-report.json' }],
-    ['xml', { outputFile: './playwright-report.xml' }]
+    ['json', { outputFile: './playwright-report.json' }]
   ],
   use: {
     baseURL: 'https://lovishprabhakar.is-a.dev',

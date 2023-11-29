@@ -18,6 +18,9 @@ jobs:
       - name: Run http-server
         run: |
           http-server . -p 8080
+      - name: Change env variable from prod to local
+        run: |
+          echo "ci=true" >> .env
       - name: Install dependencies
         run: npm ci
       - name: Install Playwright Chromium Browser

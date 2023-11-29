@@ -1,5 +1,11 @@
 import { defineConfig, devices } from '@playwright/test';
 
+require('dotenv').config();
+const isLocal = process.env.local === 'true';
+const setBaseURL = isLocal
+  ? process.env.LOCAL_BASE_URL
+  : process.env.PROD_BASE_URL;
+
 export default defineConfig({
   testDir: './tests',
   timeout: 30 * 1000,
@@ -15,10 +21,10 @@ export default defineConfig({
     ['json', { outputFile: './playwright-report.json' }],
   ],
   use: {
-    baseURL: 'https://lovishprabhakar.is-a.dev',
+    baseURL: setBaseURL,
     actionTimeout: 0,
-    trace: 'retain-on-failure',
-    video: 'retain-on-failure',
+    trace: 'on',
+    video: 'on',
     screenshot: 'only-on-failure',
   },
   projects: [

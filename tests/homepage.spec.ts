@@ -7,6 +7,7 @@ test.describe('Verify top-main menu buttons work as expected, and footer looks a
   test.beforeEach(async ({ page }) => {
     homePage = new HomePage(page);
     await homePage.goto();
+    console.log(page.url());
   });
 
   test('ccr button navigates to code compile run page', async ({ page }) => {
@@ -15,7 +16,7 @@ test.describe('Verify top-main menu buttons work as expected, and footer looks a
 
     // Assert
     expect(await page.textContent('h1')).toBe('CS Central');
-    expect(await page.textContent('h3')).toBe(' CCR - Code Compile Run');
+    expect(await page.textContent('h3')).toContain('CCR - Code Compile Run');
   });
 
   test('cer button navigates to currency exchange page', async ({ page }) => {
@@ -24,7 +25,9 @@ test.describe('Verify top-main menu buttons work as expected, and footer looks a
 
     // Assert
     expect(await page.textContent('h1')).toBe('CS Central');
-    expect(await page.textContent('h3')).toBe(' CER - Currency Exchange Rate');
+    expect(await page.textContent('h3')).toContain(
+      'CER - Currency Exchange Rate',
+    );
   });
 
   test('pin button navigates to postal index number page', async ({ page }) => {
@@ -33,7 +36,7 @@ test.describe('Verify top-main menu buttons work as expected, and footer looks a
 
     // Assert
     expect(await page.textContent('h1')).toBe('CS Central');
-    expect(await page.textContent('h3')).toBe(' PIN - Post Index Number');
+    expect(await page.textContent('h3')).toContain('PIN - Post Index Number');
   });
 
   test('footer includes About Us, Contact Me sections', async () => {

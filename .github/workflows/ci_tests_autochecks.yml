@@ -1,0 +1,37 @@
+name: Run Playwright auto-checks
+on:
+  push:
+    branches: ['main']
+jobs:
+  playwright-api-auto-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+      - name: Install node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install http-server for running app locally
+        run: |
+          npm install -g http-server
+      - name: Run http-server
+        run: |
+          http-server . -p 8080
+      - name: Change env variable from prod to local
+        run: |
+          echo "ci=true" >> .env
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Playwright Chromium Browser
+        run: npx playwright install --with-deps chromium
+      - name: Run auto-checks
+        run: npx playwright test
+      - name: Archive tests results
+        if: success() || failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-report
+          path: |
+            ./playwright-report/**/*.*
+            ./test-results/**/*.*

@@ -4,22 +4,29 @@
     "description": "Automation UI Tests with Playwright and TypeScript",
     "scripts": {
         "test": "npx playwright test",
+        "test:ui": "npx playwright test --ui",
+        "test:": "npx playwright test -- headed",
         "show-report": "npx playwright show-report",
         "test-lint": "npx eslint . --ext .ts",
         "lint": "npx eslint .",
-        "prettier": "npx prettier --write ."
+        "prettier": "npx prettier --write .",
+        "apprun": "http-server"
     },
     "devDependencies": {
         "@playwright/test": "^1.38.1",
         "@types/node": "^20.8.4",
-        "@typescript-eslint/eslint-plugin": "^6.7.5",
-        "@typescript-eslint/parser": "^6.7.5",
+        "@typescript-eslint/eslint-plugin": "^6.13.1",
+        "@typescript-eslint/parser": "^6.13.1",
+        "dotenv": "^16.3.1",
         "eslint": "^8.51.0",
         "eslint-config-prettier": "^9.0.0",
         "eslint-plugin-playwright": "^0.16.0",
         "eslint-plugin-prettier": "^5.0.1",
         "husky": "^8.0.3",
         "prettier": "3.0.3",
-        "typescript": "^5.2.2"
+        "typescript": "^5.3.2"
+    },
+    "dependencies": {
+        "http-simple-proxy": "^1.0.5"
     }
 }

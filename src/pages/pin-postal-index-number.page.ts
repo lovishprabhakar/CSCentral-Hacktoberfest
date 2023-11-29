@@ -3,7 +3,10 @@ import { BasePage } from './base.page';
 import { TopMenuComponent } from '../components/top-menu.component';
 
 export class PostalIndexNumberPage extends BasePage {
-  url = '/CS-Central/Code/postal-code.html';
+  url = process.env.local
+    ? '/Code/postal-code.html'
+    : '/CS-Central/Code/postal-code.html';
+
   topMenu = new TopMenuComponent(this.page);
 
   constructor(page: Page) {

@@ -3,7 +3,9 @@ import { BasePage } from './base.page';
 import { TopMenuComponent } from '../components/top-menu.component';
 
 export class CurrencyExchangePage extends BasePage {
-  url = '/CS-Central/Code/currency-change.html';
+  url = process.env.local
+    ? '/Code/currency-change.html'
+    : '/CS-Central/Code/currency-change.html';
   topMenu = new TopMenuComponent(this.page);
 
   constructor(page: Page) {

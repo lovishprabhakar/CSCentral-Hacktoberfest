@@ -3,8 +3,12 @@ import { BasePage } from './base.page';
 import { TopMenuComponent } from '../components/top-menu.component';
 
 export class SubsequentWeatherForecastPage extends BasePage {
-  url = '/CS-Central/Code/location.html';
-  targetUrl = '/CS-Central/Code/currentweather.html';
+  url = process.env.local
+    ? '/Code/location.html'
+    : '/CS-Central/Code/location.html';
+  targetUrl = process.env.local
+    ? '/Code/currentweather.html'
+    : '/CS-Central/Code/currentweather.html';
   topMenu = new TopMenuComponent(this.page);
 
   constructor(page: Page) {

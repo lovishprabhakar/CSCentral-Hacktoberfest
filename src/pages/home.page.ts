@@ -13,7 +13,9 @@ export class HomePage extends BasePage {
   ccrPage = new CodeCompileRunPage(this.page);
   cerPage = new CurrencyExchangePage(this.page);
   pinPage = new PostalIndexNumberPage(this.page);
-  url = '/CS-Central/Code/index.html';
+  url = process.env.local ? '' : '/CS-Central/Code/index.html';
+  localUrl = '/Code/index.html';
+
   baseURL = playwrightConfig.use?.baseURL;
 
   constructor(page: Page) {

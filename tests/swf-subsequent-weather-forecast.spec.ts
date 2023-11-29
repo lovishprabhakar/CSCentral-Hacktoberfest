@@ -17,7 +17,7 @@ test.describe('Check weather forecast on SWF - Subsequent Weather Forecast page'
     await swfPage.topMenu.homePageLogo.click();
 
     // Assert
-    expect(page.url()).toBe(`${homePage.baseURL}${homePage.url}`);
+    process.env.local ? expect(page.url()).toBe(`${homePage.baseURL}${homePage.localUrl}`) : expect(page.url()).toBe(`${homePage.baseURL}${homePage.url}`);
   });
 
   test('check current weather in city', async ({ page }) => {
